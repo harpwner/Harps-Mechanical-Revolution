@@ -3,6 +3,5 @@
     interface IFluidAcceptor
     {
         void AddSteam();
-
     }
 }

@@ -10,49 +10,49 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="mods\HarpMechanics\assets\HarpMechanics\blocktypes\mechanical\steamengine\**" />
-    <Compile Remove="mods\HarpMechanics\assets\HarpMechanics\blocktypes\molds\**" />
-    <Compile Remove="mods\HarpMechanics\assets\HarpMechanics\blocktypes\piping\**" />
-    <Compile Remove="mods\HarpMechanics\assets\HarpMechanics\shapes\block\clay\**" />
-    <Compile Remove="mods\HarpMechanics\assets\HarpMechanics\shapes\block\fuelbarrel\**" />
-    <Compile Remove="mods\HarpMechanics\assets\HarpMechanics\shapes\block\smallfirebox\**" />
-    <Compile Remove="mods\HarpMechanics\assets\HarpMechanics\shapes\block\steamengine\**" />
-    <Compile Remove="mods\HarpMechanics\assets\HarpMechanics\shapes\block\waterpump\**" />
-    <Compile Remove="mods\HarpMechanics\assets\HarpMechanics\shapes\piping\fluid\**" />
-    <EmbeddedResource Remove="mods\HarpMechanics\assets\HarpMechanics\blocktypes\mechanical\steamengine\**" />
-    <EmbeddedResource Remove="mods\HarpMechanics\assets\HarpMechanics\blocktypes\molds\**" />
-    <EmbeddedResource Remove="mods\HarpMechanics\assets\HarpMechanics\blocktypes\piping\**" />
-    <EmbeddedResource Remove="mods\HarpMechanics\assets\HarpMechanics\shapes\block\clay\**" />
-    <EmbeddedResource Remove="mods\HarpMechanics\assets\HarpMechanics\shapes\block\fuelbarrel\**" />
-    <EmbeddedResource Remove="mods\HarpMechanics\assets\HarpMechanics\shapes\block\smallfirebox\**" />
-    <EmbeddedResource Remove="mods\HarpMechanics\assets\HarpMechanics\shapes\block\steamengine\**" />
-    <EmbeddedResource Remove="mods\HarpMechanics\assets\HarpMechanics\shapes\block\waterpump\**" />
-    <EmbeddedResource Remove="mods\HarpMechanics\assets\HarpMechanics\shapes\piping\fluid\**" />
-    <None Remove="mods\HarpMechanics\assets\HarpMechanics\blocktypes\mechanical\steamengine\**" />
-    <None Remove="mods\HarpMechanics\assets\HarpMechanics\blocktypes\molds\**" />
-    <None Remove="mods\HarpMechanics\assets\HarpMechanics\blocktypes\piping\**" />
-    <None Remove="mods\HarpMechanics\assets\HarpMechanics\shapes\block\clay\**" />
-    <None Remove="mods\HarpMechanics\assets\HarpMechanics\shapes\block\fuelbarrel\**" />
-    <None Remove="mods\HarpMechanics\assets\HarpMechanics\shapes\block\smallfirebox\**" />
-    <None Remove="mods\HarpMechanics\assets\HarpMechanics\shapes\block\steamengine\**" />
-    <None Remove="mods\HarpMechanics\assets\HarpMechanics\shapes\block\waterpump\**" />
-    <None Remove="mods\HarpMechanics\assets\HarpMechanics\shapes\piping\fluid\**" />
+    <Compile Remove="mods\HarpTech\assets\HarpMechanics\blocktypes\mechanical\steamengine\**" />
+    <Compile Remove="mods\HarpTech\assets\HarpMechanics\blocktypes\molds\**" />
+    <Compile Remove="mods\HarpTech\assets\HarpMechanics\blocktypes\piping\**" />
+    <Compile Remove="mods\HarpTech\assets\HarpMechanics\shapes\block\clay\**" />
+    <Compile Remove="mods\HarpTech\assets\HarpMechanics\shapes\block\fuelbarrel\**" />
+    <Compile Remove="mods\HarpTech\assets\HarpMechanics\shapes\block\smallfirebox\**" />
+    <Compile Remove="mods\HarpTech\assets\HarpMechanics\shapes\block\steamengine\**" />
+    <Compile Remove="mods\HarpTech\assets\HarpMechanics\shapes\block\waterpump\**" />
+    <Compile Remove="mods\HarpTech\assets\HarpMechanics\shapes\piping\fluid\**" />
+    <EmbeddedResource Remove="mods\HarpTech\assets\HarpMechanics\blocktypes\mechanical\steamengine\**" />
+    <EmbeddedResource Remove="mods\HarpTech\assets\HarpMechanics\blocktypes\molds\**" />
+    <EmbeddedResource Remove="mods\HarpTech\assets\HarpMechanics\blocktypes\piping\**" />
+    <EmbeddedResource Remove="mods\HarpTech\assets\HarpMechanics\shapes\block\clay\**" />
+    <EmbeddedResource Remove="mods\HarpTech\assets\HarpMechanics\shapes\block\fuelbarrel\**" />
+    <EmbeddedResource Remove="mods\HarpTech\assets\HarpMechanics\shapes\block\smallfirebox\**" />
+    <EmbeddedResource Remove="mods\HarpTech\assets\HarpMechanics\shapes\block\steamengine\**" />
+    <EmbeddedResource Remove="mods\HarpTech\assets\HarpMechanics\shapes\block\waterpump\**" />
+    <EmbeddedResource Remove="mods\HarpTech\assets\HarpMechanics\shapes\piping\fluid\**" />
+    <None Remove="mods\HarpTech\assets\HarpMechanics\blocktypes\mechanical\steamengine\**" />
+    <None Remove="mods\HarpTech\assets\HarpMechanics\blocktypes\molds\**" />
+    <None Remove="mods\HarpTech\assets\HarpMechanics\blocktypes\piping\**" />
+    <None Remove="mods\HarpTech\assets\HarpMechanics\shapes\block\clay\**" />
+    <None Remove="mods\HarpTech\assets\HarpMechanics\shapes\block\fuelbarrel\**" />
+    <None Remove="mods\HarpTech\assets\HarpMechanics\shapes\block\smallfirebox\**" />
+    <None Remove="mods\HarpTech\assets\HarpMechanics\shapes\block\steamengine\**" />
+    <None Remove="mods\HarpTech\assets\HarpMechanics\shapes\block\waterpump\**" />
+    <None Remove="mods\HarpTech\assets\HarpMechanics\shapes\piping\fluid\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="mods\HarpMechanics\assets\HarpMechanics\blocktypes\mechanical\aeolipile.json" />
-    <Content Include="mods\HarpMechanics\assets\HarpMechanics\lang\en.json" />
-    <Content Include="mods\HarpMechanics\assets\HarpMechanics\recipes\grid\aeolipile.json" />
-    <Content Include="mods\HarpMechanics\assets\HarpMechanics\recipes\smithing\fluidpipesection.json" />
-    <Content Include="mods\HarpMechanics\assets\HarpMechanics\recipes\smithing\impeller.json" />
-    <Content Include="mods\HarpMechanics\assets\HarpMechanics\recipes\smithing\flywheelsection.json" />
-    <Content Include="mods\HarpMechanics\assets\HarpMechanics\recipes\smithing\piston.json" />
-    <Content Include="mods\HarpMechanics\assets\HarpMechanics\recipes\smithing\dvalve.json" />
-    <Content Include="mods\HarpMechanics\assets\HarpMechanics\recipes\smithing\valve.json" />
-    <Content Include="mods\HarpMechanics\assets\HarpMechanics\shapes\block\aeolipile\aeolipile_bottom.json" />
-    <Content Include="mods\HarpMechanics\assets\HarpMechanics\shapes\block\aeolipile\aeolipile_inventory.json" />
-    <Content Include="mods\HarpMechanics\assets\HarpMechanics\shapes\block\aeolipile\aeolipile_top.json" />
-    <Content Include="mods\HarpMechanics\modinfo.json" />
+    <Content Include="mods\HarpTech\assets\HarpMechanics\blocktypes\mechanical\aeolipile.json" />
+    <Content Include="mods\HarpTech\assets\HarpMechanics\lang\en.json" />
+    <Content Include="mods\HarpTech\assets\HarpMechanics\recipes\grid\aeolipile.json" />
+    <Content Include="mods\HarpTech\assets\HarpMechanics\recipes\smithing\fluidpipesection.json" />
+    <Content Include="mods\HarpTech\assets\HarpMechanics\recipes\smithing\impeller.json" />
+    <Content Include="mods\HarpTech\assets\HarpMechanics\recipes\smithing\flywheelsection.json" />
+    <Content Include="mods\HarpTech\assets\HarpMechanics\recipes\smithing\piston.json" />
+    <Content Include="mods\HarpTech\assets\HarpMechanics\recipes\smithing\dvalve.json" />
+    <Content Include="mods\HarpTech\assets\HarpMechanics\recipes\smithing\valve.json" />
+    <Content Include="mods\HarpTech\assets\HarpMechanics\shapes\block\aeolipile\aeolipile_bottom.json" />
+    <Content Include="mods\HarpTech\assets\HarpMechanics\shapes\block\aeolipile\aeolipile_inventory.json" />
+    <Content Include="mods\HarpTech\assets\HarpMechanics\shapes\block\aeolipile\aeolipile_top.json" />
+    <Content Include="mods\HarpTech\modinfo.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -77,10 +77,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="mods\HarpMechanics\assets\HarpMechanics\itemtypes\" />
-    <Folder Include="mods\HarpMechanics\assets\HarpMechanics\recipes\clayforming\" />
-    <Folder Include="mods\HarpMechanics\assets\HarpMechanics\shapes\item\" />
-    <Folder Include="mods\HarpMechanics\assets\HarpMechanics\shapes\piping\" />
+    <Folder Include="mods\HarpTech\assets\HarpMechanics\itemtypes\" />
+    <Folder Include="mods\HarpTech\assets\HarpMechanics\recipes\clayforming\" />
+    <Folder Include="mods\HarpTech\assets\HarpMechanics\shapes\item\" />
+    <Folder Include="mods\HarpTech\assets\HarpMechanics\shapes\piping\" />
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">

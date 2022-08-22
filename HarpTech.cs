@@ -1,10 +1,10 @@
 ﻿using Vintagestory.API.Common;
-using HarpMechanics.Blocks;
-using HarpMechanics.BEBehaviors;
+using HarpTech.Blocks;
+using HarpTech.BEBehaviors;
 
-namespace HarpMechanics
+namespace HarpTech
 {
-    class HarpMechanicsMod : ModSystem
+    class HarpTech : ModSystem
     {
         public override void Start(ICoreAPI api)
         {
@@ -12,6 +12,5 @@ namespace HarpMechanics
             api.RegisterBlockClass("BlockAeolipile", typeof(BlockAeolipile));
             api.RegisterBlockEntityBehaviorClass("BEBehaviorAeolipile", typeof(BEBehaviorAeolipile));
         }
-
     }
 }

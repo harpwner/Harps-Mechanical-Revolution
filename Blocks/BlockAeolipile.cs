@@ -1,10 +1,10 @@
-﻿using HarpMechanics.BEBehaviors;
+﻿using HarpTech.BEBehaviors;
 using Vintagestory.GameContent.Mechanics;
 using Vintagestory.GameContent;
 using Vintagestory.API.Common;
 using Vintagestory.API.MathTools;
 
-namespace HarpMechanics.Blocks
+namespace HarpTech.Blocks
 {
     class BlockAeolipile : BlockMPBase
     {

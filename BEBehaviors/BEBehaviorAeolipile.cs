@@ -7,7 +7,7 @@ using Vintagestory.API.MathTools;
 using Vintagestory.GameContent;
 using Vintagestory.GameContent.Mechanics;
 
-namespace HarpMechanics.BEBehaviors
+namespace HarpTech.BEBehaviors
 {
     class BEBehaviorAeolipile : BEBehaviorMPRotor
     {
@@ -225,9 +225,9 @@ namespace HarpMechanics.BEBehaviors
             base.GetBlockInfo(forPlayer, sb);
 
             sb.AppendLine(string.Format("Temperature: {0}C", (int)temperature));
-            sb.AppendLine(string.Format("Firepit Temperature: {0}C", (int)temperature));
+            //sb.AppendLine(string.Format("Firepit Temperature: {0}C", (int)temperature));
             sb.AppendLine(string.Format("Water Remaining: {0}mL", (int)waterContents));
-            sb.AppendLine("Pressure: " + pressure);
+            //sb.AppendLine("Pressure: " + pressure);
         }
     }
 }
