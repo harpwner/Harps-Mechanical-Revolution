@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using HarpTech.BEBehaviors;
+﻿using HarpMechanics.BEBehaviors;
 using Vintagestory.GameContent.Mechanics;
 using Vintagestory.GameContent;
 using Vintagestory.API.Common;
 using Vintagestory.API.MathTools;
 
-namespace HarpTech.Blocks
+namespace HarpMechanics.Blocks
 {
     class BlockAeolipile : BlockMPBase
     {
@@ -54,7 +49,7 @@ namespace HarpTech.Blocks
 
         public override void DidConnectAt(IWorldAccessor world, BlockPos pos, BlockFacing face)
         {
-
+            //empty on purpose
         }
 
         public override bool HasMechPowerConnectorAt(IWorldAccessor world, BlockPos pos, BlockFacing face)

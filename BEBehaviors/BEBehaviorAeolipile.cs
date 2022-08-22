@@ -1,17 +1,13 @@
-﻿using HarpTech.BlockEntities;
-using System;
+﻿using System;
 using System.Text;
-using Vintagestory.API;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
-using Vintagestory.API.Config;
 using Vintagestory.API.Datastructures;
 using Vintagestory.API.MathTools;
-using Vintagestory.API.Util;
 using Vintagestory.GameContent;
 using Vintagestory.GameContent.Mechanics;
 
-namespace HarpTech.BEBehaviors
+namespace HarpMechanics.BEBehaviors
 {
     class BEBehaviorAeolipile : BEBehaviorMPRotor
     {
