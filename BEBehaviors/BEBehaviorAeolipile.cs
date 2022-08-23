@@ -39,16 +39,16 @@ namespace HarpTech.BEBehaviors
             switch (Block.Variant["side"])
             {
                 case "north":
-                    sideAngle = 180;
-                    break;
-                case "south":
                     sideAngle = 0;
                     break;
+                case "south":
+                    sideAngle = 180;
+                    break;
                 case "east":
-                    sideAngle = 90;
+                    sideAngle = 270;
                     break;
                 case "west":
-                    sideAngle = 270;
+                    sideAngle = 90;
                     break;
             }
         }
