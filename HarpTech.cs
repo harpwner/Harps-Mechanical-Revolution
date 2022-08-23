@@ -2,8 +2,8 @@
 using HarpTech.Blocks;
 using HarpTech.BEBehaviors;
 
-namespace HarpTech
-{
+namespace HarpTech 
+{ 
     class HarpTech : ModSystem
     {
         public override void Start(ICoreAPI api)
