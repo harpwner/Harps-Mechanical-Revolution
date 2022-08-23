@@ -112,52 +112,52 @@ namespace HarpTech.BEBehaviors
 
             switch (sideAngle)
             {
-                case 0:
-                    particles.MinPos.X += x;
-                    particles.MinPos.Y -= y;
-                    particles.MinVelocity = new Vec3f((float)vy, (float)vx, 0);
-                    Api.World.SpawnParticles(particles);
-
-                    particles.MinPos = new Vec3d(steamPosition.X, steamPosition.Y, steamPosition.Z);
-                    particles.MinPos.X -= x;
-                    particles.MinPos.Y += y;
-                    particles.MinVelocity = new Vec3f(-(float)vy, -(float)vx, 0);
-                    Api.World.SpawnParticles(particles);
-                    break;
-                case 90:
-                    particles.MinPos.Z += x;
-                    particles.MinPos.Y += y;
-                    particles.MinVelocity = new Vec3f(0, -(float)vx, (float)vy);
-                    Api.World.SpawnParticles(particles);
-
-                    particles.MinPos = new Vec3d(steamPosition.X, steamPosition.Y, steamPosition.Z);
-                    particles.MinPos.Z -= x;
-                    particles.MinPos.Y -= y;
-                    particles.MinVelocity = new Vec3f(0, (float)vx, -(float)vy);
-                    Api.World.SpawnParticles(particles);
-                    break;
                 case 180:
-                    particles.MinPos.X -= x;
-                    particles.MinPos.Y += y;
-                    particles.MinVelocity = new Vec3f((float)vy, (float)vx, 0);
-                    Api.World.SpawnParticles(particles);
-
-                    particles.MinPos = new Vec3d(steamPosition.X, steamPosition.Y, steamPosition.Z);
                     particles.MinPos.X += x;
                     particles.MinPos.Y -= y;
                     particles.MinVelocity = new Vec3f(-(float)vy, -(float)vx, 0);
+                    Api.World.SpawnParticles(particles);
+
+                    particles.MinPos = new Vec3d(steamPosition.X, steamPosition.Y, steamPosition.Z);
+                    particles.MinPos.X -= x;
+                    particles.MinPos.Y += y;
+                    particles.MinVelocity = new Vec3f((float)vy, (float)vx, 0);
                     Api.World.SpawnParticles(particles);
                     break;
                 case 270:
+                    particles.MinPos.Z += x;
+                    particles.MinPos.Y += y;
+                    particles.MinVelocity = new Vec3f(0, (float)vx, -(float)vy);
+                    Api.World.SpawnParticles(particles);
+
+                    particles.MinPos = new Vec3d(steamPosition.X, steamPosition.Y, steamPosition.Z);
                     particles.MinPos.Z -= x;
                     particles.MinPos.Y -= y;
                     particles.MinVelocity = new Vec3f(0, -(float)vx, (float)vy);
+                    Api.World.SpawnParticles(particles);
+                    break;
+                case 0:
+                    particles.MinPos.X -= x;
+                    particles.MinPos.Y += y;
+                    particles.MinVelocity = new Vec3f(-(float)vy, -(float)vx, 0);
+                    Api.World.SpawnParticles(particles);
+
+                    particles.MinPos = new Vec3d(steamPosition.X, steamPosition.Y, steamPosition.Z);
+                    particles.MinPos.X += x;
+                    particles.MinPos.Y -= y;
+                    particles.MinVelocity = new Vec3f((float)vy, (float)vx, 0);
+                    Api.World.SpawnParticles(particles);
+                    break;
+                case 90:
+                    particles.MinPos.Z -= x;
+                    particles.MinPos.Y -= y;
+                    particles.MinVelocity = new Vec3f(0, (float)vx, -(float)vy);
                     Api.World.SpawnParticles(particles);
 
                     particles.MinPos = new Vec3d(steamPosition.X, steamPosition.Y, steamPosition.Z);
                     particles.MinPos.Z += x;
                     particles.MinPos.Y += y;
-                    particles.MinVelocity = new Vec3f(0, (float)vx, -(float)vy);
+                    particles.MinVelocity = new Vec3f(0, -(float)vx, (float)vy);
                     Api.World.SpawnParticles(particles);
                     break;
             }

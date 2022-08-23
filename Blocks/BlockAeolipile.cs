@@ -12,7 +12,7 @@ namespace HarpTech.Blocks
 
         public override void OnLoaded(ICoreAPI api)
         {
-            powerOutFacing = BlockFacing.FromCode(Variant["side"]);
+            powerOutFacing = BlockFacing.FromCode(Variant["side"]).Opposite;
 
             base.OnLoaded(api);
         }
