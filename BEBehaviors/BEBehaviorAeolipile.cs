@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HarpTech.Renderers;
+using System;
 using System.Text;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
@@ -33,7 +34,7 @@ namespace HarpTech.BEBehaviors
         {
             base.Initialize(api, properties);
             InitParticles();
-            Blockentity.RegisterGameTickListener(DoSteamStuff, 1000);
+            Blockentity.RegisterGameTickListener(DoSteamStuff, 100);
             Blockentity.RegisterGameTickListener(ParticleEmit, 20);
 
             switch (Block.Variant["side"])
@@ -88,7 +89,7 @@ namespace HarpTech.BEBehaviors
             {
                 pressure = Math.Min(1, waterContents) * (temperature / 900);
             }
-            waterContents = (int)Math.Max(0, waterContents - (10 * pressure));
+            waterContents = (int)Math.Max(0, waterContents - (pressure));
             Blockentity.MarkDirty(true);
         }
 
@@ -115,49 +116,49 @@ namespace HarpTech.BEBehaviors
                 case 180:
                     particles.MinPos.X += x;
                     particles.MinPos.Y -= y;
-                    particles.MinVelocity = new Vec3f(-(float)vy, -(float)vx, 0);
+                    particles.MinVelocity = new Vec3f((float)vy, (float)vx, 0);
                     Api.World.SpawnParticles(particles);
 
                     particles.MinPos = new Vec3d(steamPosition.X, steamPosition.Y, steamPosition.Z);
                     particles.MinPos.X -= x;
                     particles.MinPos.Y += y;
-                    particles.MinVelocity = new Vec3f((float)vy, (float)vx, 0);
+                    particles.MinVelocity = new Vec3f(-(float)vy, -(float)vx, 0);
                     Api.World.SpawnParticles(particles);
                     break;
                 case 270:
                     particles.MinPos.Z += x;
                     particles.MinPos.Y += y;
-                    particles.MinVelocity = new Vec3f(0, (float)vx, -(float)vy);
+                    particles.MinVelocity = new Vec3f(0, -(float)vx, (float)vy);
                     Api.World.SpawnParticles(particles);
 
                     particles.MinPos = new Vec3d(steamPosition.X, steamPosition.Y, steamPosition.Z);
                     particles.MinPos.Z -= x;
                     particles.MinPos.Y -= y;
-                    particles.MinVelocity = new Vec3f(0, -(float)vx, (float)vy);
+                    particles.MinVelocity = new Vec3f(0, (float)vx, -(float)vy);
                     Api.World.SpawnParticles(particles);
                     break;
                 case 0:
                     particles.MinPos.X -= x;
                     particles.MinPos.Y += y;
-                    particles.MinVelocity = new Vec3f(-(float)vy, -(float)vx, 0);
+                    particles.MinVelocity = new Vec3f((float)vy, (float)vx, 0);
                     Api.World.SpawnParticles(particles);
 
                     particles.MinPos = new Vec3d(steamPosition.X, steamPosition.Y, steamPosition.Z);
                     particles.MinPos.X += x;
                     particles.MinPos.Y -= y;
-                    particles.MinVelocity = new Vec3f((float)vy, (float)vx, 0);
+                    particles.MinVelocity = new Vec3f(-(float)vy, -(float)vx, 0);
                     Api.World.SpawnParticles(particles);
                     break;
                 case 90:
                     particles.MinPos.Z -= x;
                     particles.MinPos.Y -= y;
-                    particles.MinVelocity = new Vec3f(0, (float)vx, -(float)vy);
+                    particles.MinVelocity = new Vec3f(0, -(float)vx, (float)vy);
                     Api.World.SpawnParticles(particles);
 
                     particles.MinPos = new Vec3d(steamPosition.X, steamPosition.Y, steamPosition.Z);
                     particles.MinPos.Z += x;
                     particles.MinPos.Y += y;
-                    particles.MinVelocity = new Vec3f(0, -(float)vx, (float)vy);
+                    particles.MinVelocity = new Vec3f(0, (float)vx, -(float)vy);
                     Api.World.SpawnParticles(particles);
                     break;
             }
