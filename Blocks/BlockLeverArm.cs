@@ -1,4 +1,6 @@
-﻿using System;
+﻿using HarpTech.BEBehaviors;
+using HarpTech.BlockEntities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,19 +32,25 @@ namespace HarpTech.Blocks
                 checkPos.Add(orient[0].Opposite);
             }
 
-            PlaceFakeBlocks(orient[0], checkPos.AddCopy(orient[0]));
+            PlaceFakeBlocks(orient[0], checkPos.AddCopy(orient[0]), blockSel.Position);
 
             return base.TryPlaceBlock(world, byPlayer, itemstack, blockSel, ref failureCode);
         }
 
-        void PlaceFakeBlocks(BlockFacing face, BlockPos start)
+        void PlaceFakeBlocks(BlockFacing face, BlockPos start, BlockPos parentPos)
         {
             Block fakeBlock = api.World.GetBlock(new AssetLocation("harptech:fakeleverblock"));
             int skip = 2;
 
             for (int i = 0; i < horizontalSize; i++)
             {
-                if(i != skip) { api.World.BlockAccessor.SetBlock(fakeBlock.Id, start); }
+                if(i != skip) 
+                { 
+                    api.World.BlockAccessor.SetBlock(fakeBlock.Id, start);
+                    BEFakeBlock fakeBE = api.World.BlockAccessor.GetBlockEntity(start) as BEFakeBlock;
+                    fakeBE.parentPos = parentPos;
+                    fakeBE.MarkDirty();
+                }
                 start.Add(face);
             }
         }

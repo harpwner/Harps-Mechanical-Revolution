@@ -18,6 +18,7 @@ namespace HarpTech
 
             api.RegisterBlockEntityClass("BESmallBoiler", typeof(BEBoiler));
             api.RegisterBlockEntityClass("BEPiston", typeof(BEPiston));
+            api.RegisterBlockEntityClass("BEFakeBlock", typeof(BEFakeBlock));
 
             api.RegisterBlockEntityBehaviorClass("BEBehaviorAeolipile", typeof(BEBehaviorAeolipile));
             api.RegisterBlockEntityBehaviorClass("BEBehaviorLeverArm", typeof(BEBehaviorLeverArm));

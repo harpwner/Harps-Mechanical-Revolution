@@ -12,6 +12,7 @@ namespace HarpTech.Renderers
     class LeverArmRenderer : IRenderer
     {
         public Matrixf ModelMat = new Matrixf();
+
         internal bool ShouldRender;
 
         ICoreClientAPI api;
@@ -51,13 +52,12 @@ namespace HarpTech.Renderers
             IStandardShaderProgram prog = rpi.PreparedStandardShader(pos.X, pos.Y, pos.Z);
             prog.Tex2D = api.BlockTextureAtlas.AtlasTextureIds[0];
 
-
             prog.ModelMatrix = ModelMat
                 .Identity()
                 .Translate(pos.X - camPos.X, pos.Y - camPos.Y, pos.Z - camPos.Z)
                 .Translate(0.5f, 0.5f, 0.5f)
                 .RotateY(leverArm.yRot * GameMath.DEG2RAD)
-                .RotateZ((float)Math.Atan((16f / 32f) * (1f / 3f) * Math.Sin(leverArm.AngleRad * GameMath.DEG2RAD)))
+                .RotateZ((float)Math.Atan((16f / 32f) * (1f / 3f) * Math.Sin(leverArm.AngleRad)))
                 .Translate(-0.5f, -0.5f, -0.5f)
                 .Values
             ;

@@ -18,14 +18,18 @@ namespace HarpTech.BEBehaviors
         BEBehaviorFlywheel flywheel;
         BEPiston piston;
         LeverArmRenderer renderer;
+        BlockFacing face;
 
         public float AngleRad => GetAngleRad();
         public float yRot;
+        public int flywheelMod;
+        public int pistonMod;
+
         public float Pressure => GetPressure();
-        float systemPressure;
         float lastTime;
         float dt;
         float fakeAngle;
+        bool canPlay;
         bool engineComplete = false;
 
         public BEBehaviorLeverArm(BlockEntity blockentity) : base(blockentity) { }
@@ -39,33 +43,32 @@ namespace HarpTech.BEBehaviors
             switch (this.Blockentity.Block.Variant["side"])
             {
                 case "north":
-                    yRot = 0;
-                    break;
                 case "south":
-                    yRot = 180;
+                    yRot = 0;
+                    face = BlockFacing.NORTH;
                     break;
                 case "east":
-                    yRot = 270;
-                    break;
                 case "west":
                     yRot = 90;
+                    face = BlockFacing.EAST;
                     break;
             }
 
-            if (api.Side == EnumAppSide.Client)
+            if (Api.Side == EnumAppSide.Client)
             {
-                renderer = new LeverArmRenderer(api as ICoreClientAPI, this.Blockentity.Pos, GetMesh(), this);
+                renderer = new LeverArmRenderer(Api as ICoreClientAPI, this.Blockentity.Pos, GetMesh(), this);
                 renderer.ShouldRender = true;
-                (api as ICoreClientAPI).Event.RegisterRenderer(renderer, EnumRenderStage.Opaque, "wattleverarm");
+                (Api as ICoreClientAPI).Event.RegisterRenderer(renderer, EnumRenderStage.Opaque, "wattleverarm");
             }
         }
 
         void TrySetupEngine(float dt)
         {
-            if(GetFlywheel() == null || GetPiston() == null) { engineComplete = false; return; }
+            BEBehaviorFlywheel flywheel = GetFlywheel();
+            BEPiston piston = GetPiston();
+            if(piston == null || flywheel == null) { engineComplete = false; return; }
 
             engineComplete = true;
-            piston.lever = this;
         }
 
         MeshData GetMesh()
@@ -76,14 +79,16 @@ namespace HarpTech.BEBehaviors
             MeshData mesh;
             ITesselatorAPI mesher = ((ICoreClientAPI)Api).Tesselator;
 
-            mesher.TesselateShape(block, Vintagestory.API.Common.Shape.TryGet(Api, "harptech:shapes/block/wattengine/lever_top.json"), out mesh);
+            mesher.TesselateShape(block, Shape.TryGet(Api, "harptech:shapes/block/wattengine/lever_arm.json"), out mesh);
 
             return mesh;
         }
+
         public override void OnBlockRemoved()
         {
             renderer?.Dispose();
             renderer = null;
+            if(piston != null) { piston.lever = null; }
 
             base.OnBlockRemoved();
         }
@@ -102,14 +107,26 @@ namespace HarpTech.BEBehaviors
 
             if(flywheel != null)
             {
-                angle = flywheel.AngleRad * GameMath.RAD2DEG / 2;
+                angle = flywheelMod * flywheel.AngleRad / 2;
             } else if(piston != null)
             {
                 dt = Api.World.ElapsedMilliseconds - lastTime;
                 lastTime = Api.World.ElapsedMilliseconds;
 
-                float rotSpeed = Pressure * 80 * (dt / 1000);
-                return fakeAngle += rotSpeed;
+                float rotSpeed = Pressure * 80 * (dt / 1000) * GameMath.DEG2RAD;
+                fakeAngle += rotSpeed;
+                angle = fakeAngle;
+            }
+
+            if(Api.Side != EnumAppSide.Client) { return angle; }
+
+            if (canPlay && piston != null && pistonMod * Math.Sin(angle) > 0.9f)
+            {
+                Api.World.PlaySoundAt(new AssetLocation("harptech:sounds/steam"), piston.Pos.X, piston.Pos.Y, piston.Pos.Z, null, true, 24, piston.Pressure * 2);
+                canPlay = false;
+            } else if (!canPlay)
+            {
+                canPlay = pistonMod * Math.Sin(angle) < -0.9f ? true : false;
             }
 
             return angle;
@@ -123,57 +140,49 @@ namespace HarpTech.BEBehaviors
 
         public BEBehaviorFlywheel GetFlywheel()
         {
-            BlockFacing sideFacing = BlockFacing.FromCode(this.Blockentity.Block.Variant["side"]).GetCW();
+            BlockFacing sideFacing = face.GetCW();
             BlockFacing sideOpposite = sideFacing.Opposite;
             BlockPos pos = this.Blockentity.Pos.Copy();
             BlockPos pos2 = pos.Copy();
             pos.Add(sideFacing).Add(sideFacing).Add(BlockFacing.DOWN).Add(BlockFacing.DOWN);
             pos2.Add(sideOpposite).Add(sideOpposite).Add(BlockFacing.DOWN).Add(BlockFacing.DOWN);
 
-            flywheel = Api.World.BlockAccessor.GetBlockEntity(pos)?.GetBehavior<BEBehaviorFlywheel>();
-            if(flywheel == null) { flywheel = Api.World.BlockAccessor.GetBlockEntity(pos2)?.GetBehavior<BEBehaviorFlywheel>(); }
+            flywheel = Api.World.BlockAccessor.GetBlockEntity(pos)?.GetBehavior<BEBehaviorFlywheel>(); flywheelMod = -1;
+            if(flywheel == null) { flywheel = Api.World.BlockAccessor.GetBlockEntity(pos2)?.GetBehavior<BEBehaviorFlywheel>(); flywheelMod = 1; }
+
+            if(flywheel != null)
+            {
+                flywheelMod *= flywheel.GetRotDir();
+            }
 
             return flywheel;
         }
 
         public BEPiston GetPiston()
         {
-            BlockFacing sideFacing = BlockFacing.FromCode(this.Blockentity.Block.Variant["side"]).GetCW();
+            BlockFacing sideFacing = face.GetCW();
             BlockFacing sideOpposite = sideFacing.Opposite;
             BlockPos pos = this.Blockentity.Pos.Copy();
             BlockPos pos2 = pos.Copy();
             pos.Add(sideFacing).Add(sideFacing).Add(BlockFacing.DOWN);
             pos2.Add(sideOpposite).Add(sideOpposite).Add(BlockFacing.DOWN); ;
 
-            BlockEntity entity = Api.World.BlockAccessor.GetBlockEntity(pos);
-            if(entity == null) { entity = Api.World.BlockAccessor.GetBlockEntity(pos2); }
+            BlockEntity entity = Api.World.BlockAccessor.GetBlockEntity(pos); pistonMod = 1;
+            if (entity == null || !(entity is BEPiston)) { entity = Api.World.BlockAccessor.GetBlockEntity(pos2); pistonMod = -1; }
             
             if(entity != null && entity is BEPiston) { piston = entity as BEPiston; }
-            else { piston = null; return null; }
+
+            switch (face.Index)
+            {
+                //fixes the east/west piston inversion that occurs due to mechpower rotations
+                case BlockFacing.indexEAST:
+                    pistonMod *= -1;
+                    break;
+            }
+
+            if(piston != null) { piston.lever = this; }
 
             return piston;
-        }
-
-        public override void ToTreeAttributes(ITreeAttribute tree)
-        {
-            tree.SetFloat("eff", systemPressure);
-
-            base.ToTreeAttributes(tree);
-        }
-
-        public override void FromTreeAttributes(ITreeAttribute tree, IWorldAccessor worldAccessForResolve)
-        {
-            this.systemPressure = tree.GetFloat("eff");
-
-            base.FromTreeAttributes(tree, worldAccessForResolve);
-        }
-
-        public override void GetBlockInfo(IPlayer forPlayer, StringBuilder dsc)
-        {
-            base.GetBlockInfo(forPlayer, dsc);
-
-            dsc.AppendLine("Engine Complete?: " + engineComplete);
-            dsc.AppendLine("angle: " + AngleRad);
         }
     }
 }

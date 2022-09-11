@@ -19,12 +19,11 @@ namespace HarpTech.BEBehaviors
         FlywheelArmRenderer rendererArm;
         FlywheelGearRenderer rendererGear;
         BlockFacing face;
-        float yRot;
 
         protected override float Resistance => 0.6f;
         protected override double AccelerationFactor => 0.06d;
-        protected override float TorqueFactor => GetEfficiency() * 2;
-        protected override float TargetSpeed => GetEfficiency() * 6;
+        protected override float TorqueFactor => GetEfficiency() * 8;
+        protected override float TargetSpeed => GetEfficiency() / 4f;
 
         public BEBehaviorFlywheel(BlockEntity blockentity) : base(blockentity) { }
 
@@ -47,22 +46,6 @@ namespace HarpTech.BEBehaviors
             base.Initialize(api, properties);
 
             face = BlockFacing.FromCode(Block.Variant["side"]);
-
-            switch (this.Block.Variant["side"])
-            {
-                case "north":
-                    yRot = 0;
-                    break;
-                case "south":
-                    yRot = 180;
-                    break;
-                case "east":
-                    yRot = 270;
-                    break;
-                case "west":
-                    yRot = 90;
-                    break;
-            }
 
             if (api.Side == EnumAppSide.Client)
             {
@@ -100,6 +83,41 @@ namespace HarpTech.BEBehaviors
             mesher.TesselateShape(block, Vintagestory.API.Common.Shape.TryGet(Api, "harptech:shapes/block/wattengine/flywheel_arm_gear.json"), out mesh);
 
             return mesh;
+        }
+
+        public int[] GetRendModifiers()
+        {
+            int[] modifiers = new int[4] { 0, 0, 0, 0 };
+
+            switch (Block.Variant["side"])
+            {
+                case "north":
+                    modifiers = new int[4] { 1, -1, 0, 180 };
+                    break;
+                case "south":
+                    modifiers = new int[4] { 1, -1, 0, 0 };
+                    break;
+                case "west":
+                    modifiers = new int[4] { 0, -1, -1, 270 };
+                    break;
+                case "east":
+                    modifiers = new int[4] { 0, 1, 1, 90 };
+                    break;
+            }
+
+            return modifiers;
+        }
+
+        public int GetRotDir()
+        {
+            switch (Block.Variant["side"])
+            {
+                //for some ungodly reason, mech power facing west causes inconsistent rotation with other directions
+                case "west":
+                    return -1;
+            }
+
+            return 1;
         }
 
         public override void OnBlockRemoved()
@@ -174,16 +192,6 @@ namespace HarpTech.BEBehaviors
             }
 
             return piston == null ? null : piston;
-        }
-
-        public override void GetBlockInfo(IPlayer forPlayer, StringBuilder sb)
-        {
-            base.GetBlockInfo(forPlayer, sb);
-
-            sb.AppendLine("Target Speed: " + TargetSpeed);
-            sb.AppendLine("Target Torque: " + TorqueFactor);
-            sb.AppendLine("Has Lever?: " + HasLeverArm());
-            sb.AppendLine("Has Piston?: " + (GetPiston() != null));
         }
     }
 }

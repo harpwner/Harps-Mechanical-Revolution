@@ -15,9 +15,6 @@ namespace HarpTech.BlockEntities
 {
     class BEPiston : BlockEntity
     {
-        public float Angle => GetAngle();
-        float pressure;
-
         public float Pressure => GetPressure();
         public BEBehaviorLeverArm lever;
         PistonRenderer renderer;
@@ -62,13 +59,6 @@ namespace HarpTech.BlockEntities
             base.OnBlockUnloaded();
         }
 
-        float GetAngle()
-        {
-            if(lever != null) { return lever.AngleRad; }
-
-            return 0;
-        }
-
         float GetPressure()
         {
             BEBoiler boiler = GetBoiler();
@@ -80,27 +70,13 @@ namespace HarpTech.BlockEntities
         BEBoiler GetBoiler()
         {
             return Api.World.BlockAccessor.GetBlockEntity(Pos.DownCopy()) as BEBoiler;
-        }
-
-        public override void FromTreeAttributes(ITreeAttribute tree, IWorldAccessor worldAccessForResolve)
-        {
-            tree.SetFloat("pressure", pressure);
-
-            base.FromTreeAttributes(tree, worldAccessForResolve);
-        }
-
-        public override void ToTreeAttributes(ITreeAttribute tree)
-        {
-            pressure = tree.GetFloat("pressure");
-
-            base.ToTreeAttributes(tree);
-        }
+        }   
 
         public override void GetBlockInfo(IPlayer forPlayer, StringBuilder dsc)
         {
             base.GetBlockInfo(forPlayer, dsc);
 
-            dsc.AppendLine("Pressure: " + pressure);
+            dsc.AppendLine("Pressure: " + Pressure);
         }
     }
 }

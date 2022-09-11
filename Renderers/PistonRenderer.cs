@@ -52,11 +52,17 @@ namespace HarpTech.Renderers
             IStandardShaderProgram prog = rpi.PreparedStandardShader(pos.X, pos.Y, pos.Z);
             prog.Tex2D = api.BlockTextureAtlas.AtlasTextureIds[0];
 
+            float angle = 0;
+            if(piston.lever != null)
+            {
+                angle =  (float)(((1f / 3f) * piston.lever.pistonMod * Math.Sin(piston.lever.AngleRad)) + (1f / 3f));
+            }
+
 
             prog.ModelMatrix = ModelMat
                 .Identity()
                 .Translate(pos.X - camPos.X, pos.Y - camPos.Y, pos.Z - camPos.Z)
-                .Translate(0, ((1f / 3f) * Math.Sin(piston.Angle * GameMath.DEG2RAD)) + (1f / 3f), 0)
+                .Translate(0, angle, 0)
                 .Values
             ;
 
