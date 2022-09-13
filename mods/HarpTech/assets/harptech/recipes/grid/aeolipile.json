@@ -1,0 +1,53 @@
+﻿{
+    "ingredientPattern": "XHC,RAF,PSP",
+    "ingredients": {
+        "X": {
+            "type": "item",
+            "code": "game:saw-*",
+            "isTool": true,
+            "toolDurabilityCost": 5
+        },
+        "H": {
+            "type": "item",
+            "code": "game:hammer-*",
+            "isTool": true,
+            "toolDurabilityCost": 1
+        },
+        "C": {
+            "type": "item",
+            "code": "game:chisel-*",
+            "isTool": true,
+            "toolDurabilityCost": 1
+        },
+        "S": {
+            "type": "item",
+            "code": "game:metalplate-copper",
+            "quantity": 6
+        },
+        "R": {
+            "type": "item",
+            "code": "game:resin",
+            "quantity": 2
+        },
+        "P": {
+            "type": "item",
+            "code": "game:ingot-copper"
+        },
+        "F": {
+            "type": "item",
+            "code": "game:fat"
+        },
+        "A": {
+            "type": "block",
+            "code": "game:woodenaxle-ud"
+        }
+    },
+    "width": 3,
+    "height": 3,
+    "output": {
+        "type": "block",
+        "code": "aeolipile-north",
+        "quantity": 1
+    }
+}
+	

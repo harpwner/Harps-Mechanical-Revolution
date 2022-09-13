@@ -1,0 +1,127 @@
+﻿{
+    "code": "aeolipile",
+    "class": "BlockAeolipile",
+    "entityClass": "Generic",
+    "entityBehaviors": [ { "name": "BEBehaviorAeolipile" } ],
+    "behaviors": [ { "name": "HorizontalOrientable" } ],
+    "attributes": {
+        "handbook": {
+            "groupBy": [ "aeolipile-*" ]
+        }
+    },
+    "variantgroups": [
+        {
+            "code": "side",
+            "loadFromProperties": "abstract/horizontalorientation"
+        }
+    ],
+    "creativeinventory": {
+        "general": [ "*-north" ],
+        "harpmechanics": [ "*-north" ]
+    },
+    "shapebytype": {
+        "*-north": {
+            "base": "block/aeolipile/aeolipile_top",
+            "rotateY": 180
+        },
+        "*-east": {
+            "base": "block/aeolipile/aeolipile_top",
+            "rotateY": 90
+        },
+        "*-south": {
+            "base": "block/aeolipile/aeolipile_top",
+            "rotateY": 0
+        },
+        "*-west": {
+            "base": "block/aeolipile/aeolipile_top",
+            "rotateY": 270
+        }
+    },
+    "blockmaterial": "Metal",
+    "textures": {
+        "copper1": { "base": "game:block/metal/sheet/copper1" },
+        "generic": { "base": "game:block/wood/planks/generic" },
+        "brass": { "base": "game:block/metal/sheet/copper3" },
+        "brass2": { "base": "game:block/metal/sheet/copper3" }
+    },
+    "shapeinventory": { "base": "block/aeolipile/aeolipile_inventory" },
+    "sidesolid": {
+        "all": false
+    },
+    "sideopaque": {
+        "all": false
+    },
+    "collisionbox": {
+        "x1": 0,
+        "y1": 0,
+        "z1": 0,
+        "x2": 1,
+        "y2": 0.1,
+        "z2": 1
+    },
+    "selectionbox": {
+        "x1": 0,
+        "y1": -0.35,
+        "z1": 0,
+        "x2": 1,
+        "y2": 0.75,
+        "z2": 1
+    },
+    "rainPermeable": false,
+    "drops": [
+        {
+            "type": "block",
+            "code": "aeolipile-north"
+        }
+    ],
+    "resistance": 3.5,
+    "lightAbsorption": 0,
+    "maxStackSize": 4,
+    "guiTransform": {
+        "origin": {
+            "x": 0.45,
+            "y": 0,
+            "z": 0.5
+        },
+        "scale": 1
+    },
+    "groundTransform": {
+        "translation": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+        },
+        "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "origin": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+        },
+        "scale": 3
+    },
+    "sounds": {
+        "hit": "block/planks",
+        "break": "block/planks",
+        "place": "block/planks",
+        "walk": "walk/wood"
+    },
+    "heldTpIdleAnimation": "holdbothhandslarge",
+    "heldTpUseAnimation": "twohandplaceblock",
+    "tpHandTransform": {
+        "translation": {
+            "x": -1.2,
+            "y": -0.9,
+            "z": -0.8
+        },
+        "rotation": {
+            "x": -2,
+            "y": 25,
+            "z": -78
+        },
+        "scale": 0.5
+    }
+}

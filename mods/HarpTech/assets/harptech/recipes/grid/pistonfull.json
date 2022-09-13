@@ -1,0 +1,26 @@
+﻿{
+    "ingredientPattern": "P,F,C",
+    "ingredients": {
+        "P": {
+            "type": "item",
+            "code": "piston"
+        },
+        "F": {
+            "type": "item",
+            "code": "game:fat",
+            "quantity": 4
+        },
+        "C": {
+            "type": "item",
+            "code": "pistoncase"
+        }
+    },
+    "width": 1,
+    "height": 3,
+    "output": {
+        "type": "block",
+        "code": "wattpiston",
+        "quantity": 1
+    }
+}
+	

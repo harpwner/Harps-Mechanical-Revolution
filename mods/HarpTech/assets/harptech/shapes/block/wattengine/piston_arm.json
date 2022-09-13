@@ -1,0 +1,75 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"iron": "/Users/HARPWNER/AppData/Roaming/Vintagestory/assets/survival/textures/block/metal/plate/iron"
+	},
+	"elements": [
+		{
+			"name": "Piston",
+			"from": [ 5.0, 1.0, 5.0 ], 
+			"to": [ 11.0, 4.0, 11.0 ], 
+			"rotationOrigin": [ 5.0, 1.0, 5.0 ],
+			"faces": {
+				"north": { "texture": "#iron", "uv": [ 0.0, 0.0, 6.0, 3.0 ], "reflectiveMode": 2 },
+				"east": { "texture": "#iron", "uv": [ 0.0, 0.0, 6.0, 3.0 ], "reflectiveMode": 2 },
+				"south": { "texture": "#iron", "uv": [ 0.0, 0.0, 6.0, 3.0 ], "reflectiveMode": 2 },
+				"west": { "texture": "#iron", "uv": [ 0.0, 0.0, 6.0, 3.0 ], "reflectiveMode": 2 },
+				"up": { "texture": "#iron", "uv": [ 0.0, 0.0, 6.0, 6.0 ], "reflectiveMode": 2 },
+				"down": { "texture": "#iron", "uv": [ 0.0, 0.0, 6.0, 6.0 ], "reflectiveMode": 2 }
+			},
+			"children": [
+				{
+					"name": "Cube1",
+					"from": [ 2.0, 3.0, 2.0 ], 
+					"to": [ 4.0, 10.0, 4.0 ], 
+					"rotationOrigin": [ 3.0, 3.0, 3.0 ],
+					"rotationY": 45.0,
+					"faces": {
+						"north": { "texture": "#iron", "uv": [ 0.0, 0.0, 2.0, 7.0 ], "reflectiveMode": 2 },
+						"east": { "texture": "#iron", "uv": [ 0.0, 0.0, 2.0, 7.0 ], "reflectiveMode": 2 },
+						"south": { "texture": "#iron", "uv": [ 0.0, 0.0, 2.0, 7.0 ], "reflectiveMode": 2 },
+						"west": { "texture": "#iron", "uv": [ 0.0, 0.0, 2.0, 7.0 ], "reflectiveMode": 2 },
+						"up": { "texture": "#iron", "uv": [ 0.0, 0.0, 2.0, 2.0 ], "reflectiveMode": 2 },
+						"down": { "texture": "#iron", "uv": [ 0.0, 0.0, 2.0, 2.0 ], "reflectiveMode": 2 }
+					}
+				}
+			]
+		},
+		{
+			"name": "Arm",
+			"from": [ 7.5, 11.0, 7.5 ], 
+			"to": [ 8.5, 17.5, 8.5 ], 
+			"rotationOrigin": [ 8.0, 11.0, 8.0 ],
+			"faces": {
+				"north": { "texture": "#iron", "uv": [ 0.0, 0.0, 1.0, 6.5 ], "reflectiveMode": 2 },
+				"east": { "texture": "#iron", "uv": [ 0.0, 0.0, 1.0, 6.5 ], "reflectiveMode": 2 },
+				"south": { "texture": "#iron", "uv": [ 0.0, 0.0, 1.0, 6.5 ], "reflectiveMode": 2 },
+				"west": { "texture": "#iron", "uv": [ 0.0, 0.0, 1.0, 6.5 ], "reflectiveMode": 2 },
+				"up": { "texture": "#iron", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "reflectiveMode": 2 },
+				"down": { "texture": "#iron", "uv": [ 0.0, 0.0, 1.0, 1.0 ], "reflectiveMode": 2 }
+			},
+			"children": [
+				{
+					"name": "Cube4",
+					"from": [ -0.5, 6.5, -0.5 ], 
+					"to": [ 1.5, 8.5, 1.5 ], 
+					"rotationOrigin": [ -1.0, 7.0, -1.0 ],
+					"faces": {
+						"north": { "texture": "#iron", "uv": [ 0.0, 0.0, 2.0, 2.0 ], "reflectiveMode": 2 },
+						"east": { "texture": "#iron", "uv": [ 0.0, 0.0, 2.0, 2.0 ], "reflectiveMode": 2 },
+						"south": { "texture": "#iron", "uv": [ 0.0, 0.0, 2.0, 2.0 ], "reflectiveMode": 2 },
+						"west": { "texture": "#iron", "uv": [ 0.0, 0.0, 2.0, 2.0 ], "reflectiveMode": 2 },
+						"up": { "texture": "#iron", "uv": [ 0.0, 0.0, 2.0, 2.0 ], "reflectiveMode": 2},
+						"down": { "texture": "#iron", "uv": [ 0.0, 0.0, 2.0, 2.0 ], "reflectiveMode": 2 }
+					}
+				}
+			]
+		}
+	]}

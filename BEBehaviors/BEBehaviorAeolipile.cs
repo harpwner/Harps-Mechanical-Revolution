@@ -1,5 +1,4 @@
-﻿using HarpTech.Renderers;
-using System;
+﻿using System;
 using System.Text;
 using Vintagestory.API.Client;
 using Vintagestory.API.Common;
@@ -12,21 +11,20 @@ namespace HarpTech.BEBehaviors
 {
     class BEBehaviorAeolipile : BEBehaviorMPRotor
     {
+        public static SimpleParticleProperties particles = new SimpleParticleProperties(1, 1, ColorUtil.ColorFromRgba(200, 200, 200, 50), new Vec3d(), new Vec3d(), new Vec3f(), new Vec3f());
+        Vec3d steamPosition = new Vec3d(0, 0, 0);
+
+        int sideAngle = 0;
+        int waterContents = 0;
         float pressure;
         float temperature;
-        int sideAngle = 0;
-        Vec3d steamPosition = new Vec3d(0, 0, 0);
         double radius = 0.345d;
 
-        public static SimpleParticleProperties particles = new SimpleParticleProperties(1, 1, ColorUtil.ColorFromRgba(200, 200, 200, 50), new Vec3d(), new Vec3d(), new Vec3f(), new Vec3f());
-        public int waterContents = 0;
-        public int WaterContents => waterContents;
-
+        protected int WaterContents => waterContents;
         protected override float Resistance => 0.8f;
-        protected override double AccelerationFactor => 0.04d;
+        protected override double AccelerationFactor => 0.04;
         protected override float TargetSpeed => pressure * 2;
         protected override float TorqueFactor => pressure / 25;
-
 
         public BEBehaviorAeolipile(BlockEntity blockentity) : base(blockentity) { }
 
@@ -54,6 +52,7 @@ namespace HarpTech.BEBehaviors
             }
         }
 
+        /// <summary>Gives the aeolipile particles their appearance.</summary>
         private void InitParticles()
         {
             steamPosition = new Vec3d(Position.X + 0.5, Position.Y + 0.5, Position.Z + 0.5);
@@ -164,6 +163,11 @@ namespace HarpTech.BEBehaviors
             }
         }
 
+
+        /// <summary>This method is used to attempt to grab water from a bucket and place it in the aeolipile.</summary>
+        /// <param name="lc">The bucket held by the player.</param>
+        /// <param name="byPlayer">The player.</param>
+        /// <returns>Whether or not the operation was successful.</returns>
         public bool BucketInteract(BlockLiquidContainerBase lc, IPlayer byPlayer)
         {
             ItemStack containerStack = byPlayer.InventoryManager.ActiveHotbarSlot.Itemstack;
@@ -226,9 +230,7 @@ namespace HarpTech.BEBehaviors
             base.GetBlockInfo(forPlayer, sb);
 
             sb.AppendLine(string.Format("Temperature: {0}C", (int)temperature));
-            //sb.AppendLine(string.Format("Firepit Temperature: {0}C", (int)temperature));
             sb.AppendLine(string.Format("Water Remaining: {0}mL", (int)waterContents));
-            //sb.AppendLine("Pressure: " + pressure);
         }
     }
 }

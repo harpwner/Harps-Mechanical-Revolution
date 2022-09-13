@@ -1,0 +1,11 @@
+{
+  "type": "code",
+  "modid": "harptech",
+  "name": "Harp's Mechanical Revolution",
+  "authors": [ "Harpwner" ],
+  "description": "Harp's Mechanical Revolution! Expanding Vintage Story's mechanical power since 2022",
+  "version": "0.2.0",
+  "dependency": {
+    "game": "1.17.0"
+  }
+}

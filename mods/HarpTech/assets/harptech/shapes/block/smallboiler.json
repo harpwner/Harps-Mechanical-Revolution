@@ -1,0 +1,59 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"iron1": "/Users/HARPWNER/AppData/Roaming/Vintagestory/assets/survival/textures/block/metal/sheet/iron1",
+		"iron": "/Users/HARPWNER/AppData/Roaming/Vintagestory/assets/survival/textures/block/metal/plate/iron"
+	},
+	"elements": [
+		{
+			"name": "Iron",
+			"from": [ 1.0, 0.0, 1.0 ], 
+			"to": [ 15.0, 16.0, 15.0 ], 
+			"rotationOrigin": [ 1.0, 0.0, 1.0 ],
+			"faces": {
+				"north": { "texture": "#iron", "uv": [ 0.0, 0.0, 14.0, 16.0 ], "reflectiveMode": 2 },
+				"east": { "texture": "#iron", "uv": [ 0.0, 0.0, 14.0, 16.0 ], "reflectiveMode": 2 },
+				"south": { "texture": "#iron", "uv": [ 0.0, 0.0, 14.0, 16.0 ], "reflectiveMode": 2 },
+				"west": { "texture": "#iron", "uv": [ 0.0, 0.0, 14.0, 16.0 ], "reflectiveMode": 2 },
+				"up": { "texture": "#iron", "uv": [ 0.0, 0.0, 14.0, 14.0 ], "reflectiveMode": 2 },
+				"down": { "texture": "#iron", "uv": [ 0.0, 0.0, 14.0, 14.0 ], "reflectiveMode": 2 }
+			},
+			"children": [
+				{
+					"name": "Cube1",
+					"from": [ -1.0, 2.0, -1.0 ], 
+					"to": [ 15.0, 4.0, 15.0 ], 
+					"rotationOrigin": [ -1.0, 2.0, -1.0 ],
+					"faces": {
+						"north": { "texture": "#iron1", "uv": [ 0.0, 7.0, 16.0, 9.0 ], "reflectiveMode": 2 },
+						"east": { "texture": "#iron1", "uv": [ 0.0, 7.0, 16.0, 9.0 ], "reflectiveMode": 2 },
+						"south": { "texture": "#iron1", "uv": [ 0.0, 6.5, 16.0, 8.5 ], "reflectiveMode": 2 },
+						"west": { "texture": "#iron1", "uv": [ 0.0, 7.5, 16.0, 9.5 ], "reflectiveMode": 2 },
+						"up": { "texture": "#iron1", "uv": [ 0.0, 0.0, 16.0, 16.0 ], "reflectiveMode": 2 },
+						"down": { "texture": "#iron1", "uv": [ 0.0, 0.0, 16.0, 16.0 ], "reflectiveMode": 2 }
+					}
+				},
+				{
+					"name": "Cube3",
+					"from": [ -1.0, 12.0, -1.0 ], 
+					"to": [ 15.0, 14.0, 15.0 ], 
+					"rotationOrigin": [ -1.0, 12.0, -1.0 ],
+					"faces": {
+						"north": { "texture": "#iron1", "uv": [ 0.0, 7.0, 16.0, 9.0 ], "reflectiveMode": 2 },
+						"east": { "texture": "#iron1", "uv": [ 0.0, 7.0, 16.0, 9.0 ], "reflectiveMode": 2 },
+						"south": { "texture": "#iron1", "uv": [ 0.0, 7.0, 16.0, 9.0 ], "reflectiveMode": 2 },
+						"west": { "texture": "#iron1", "uv": [ 0.0, 7.0, 16.0, 9.0 ], "reflectiveMode": 2 },
+						"up": { "texture": "#iron1", "uv": [ 0.0, 0.0, 16.0, 16.0 ], "reflectiveMode": 2 },
+						"down": { "texture": "#iron1", "uv": [ 0.0, 0.0, 16.0, 16.0 ], "reflectiveMode": 2 }
+					}
+				}
+			]
+		}
+	]}

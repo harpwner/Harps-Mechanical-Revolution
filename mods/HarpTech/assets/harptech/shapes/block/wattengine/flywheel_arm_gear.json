@@ -1,0 +1,91 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"brass": "/Users/HARPWNER/AppData/Roaming/Vintagestory/assets/survival/textures/block/metal/plate/brass"
+	},
+	"elements": [
+		{
+			"name": "Gear",
+			"from": [ 7.0, 7.5, 6.0 ], 
+			"to": [ 9.0, 8.5, 8.0 ], 
+			"rotationOrigin": [ 8.0, 8.0, 7.0 ],
+			"rotationX": 90.0,
+			"faces": {
+				"north": { "texture": "#brass", "uv": [ 6.5, 4.5, 8.5, 5.5 ], "reflectiveMode": 2 },
+				"east": { "texture": "#brass", "uv": [ 3.5, 5.5, 5.5, 6.5 ], "reflectiveMode": 2 },
+				"south": { "texture": "#brass", "uv": [ 5.0, 6.0, 7.0, 7.0 ], "reflectiveMode": 2 },
+				"west": { "texture": "#brass", "uv": [ 4.5, 7.5, 6.5, 8.5 ], "reflectiveMode": 2 },
+				"up": { "texture": "#brass", "uv": [ 5.5, 5.0, 7.5, 7.0 ], "reflectiveMode": 2 },
+				"down": { "texture": "#brass", "uv": [ 7.5, 6.5, 9.5, 8.5 ], "reflectiveMode": 2 }
+			},
+			"children": [
+				{
+					"name": "Cube1",
+					"from": [ -1.5, 0.1, -1.5 ], 
+					"to": [ 3.5, 0.9, 3.5 ], 
+					"rotationOrigin": [ 1.0, 0.0, 1.0 ],
+					"rotationY": 10.0,
+					"faces": {
+						"north": { "texture": "#brass", "uv": [ 5.0, 6.5, 10.0, 7.0 ], "windMode": [-1,-1,-1,-1], "reflectiveMode": 2 },
+						"east": { "texture": "#brass", "uv": [ 5.0, 6.5, 10.0, 7.0 ], "reflectiveMode": 2 },
+						"south": { "texture": "#brass", "uv": [ 6.5, 7.5, 11.5, 8.0 ], "reflectiveMode": 2 },
+						"west": { "texture": "#brass", "uv": [ 5.5, 7.5, 10.5, 8.0 ], "reflectiveMode": 2 },
+						"up": { "texture": "#brass", "uv": [ 5.0, 5.0, 10.0, 10.0 ], "reflectiveMode": 2 },
+						"down": { "texture": "#brass", "uv": [ 5.0, 5.0, 10.0, 10.0 ], "reflectiveMode": 2 }
+					}
+				},
+				{
+					"name": "Cube3",
+					"from": [ -1.5, 0.1005, -1.5 ], 
+					"to": [ 3.5, 0.9015, 3.5 ], 
+					"rotationOrigin": [ 1.0, 0.0, 1.0 ],
+					"rotationY": 55.0,
+					"faces": {
+						"north": { "texture": "#brass", "uv": [ 5.0, 4.0, 10.0, 4.5 ], "reflectiveMode": 2 },
+						"east": { "texture": "#brass", "uv": [ 4.0, 5.0, 9.0, 5.5 ], "reflectiveMode": 2 },
+						"south": { "texture": "#brass", "uv": [ 3.5, 4.5, 8.5, 5.0 ], "reflectiveMode": 2 },
+						"west": { "texture": "#brass", "uv": [ 5.5, 4.5, 10.5, 5.0 ], "reflectiveMode": 2 },
+						"up": { "texture": "#brass", "uv": [ 7.5, 6.5, 12.5, 11.5 ], "reflectiveMode": 2 },
+						"down": { "texture": "#brass", "uv": [ 6.0, 4.0, 11.0, 9.0 ], "reflectiveMode": 2 }
+					}
+				},
+				{
+					"name": "Cube4",
+					"from": [ -1.5, 0.101, -1.5 ], 
+					"to": [ 3.5, 0.903, 3.5 ], 
+					"rotationOrigin": [ 1.0, 0.0, 1.0 ],
+					"rotationY": 77.5,
+					"faces": {
+						"north": { "texture": "#brass", "uv": [ 6.5, 3.5, 11.5, 4.0 ], "reflectiveMode": 2 },
+						"east": { "texture": "#brass", "uv": [ 5.5, 4.0, 10.5, 4.5 ], "reflectiveMode": 2 },
+						"south": { "texture": "#brass", "uv": [ 8.0, 8.5, 13.0, 9.0 ], "reflectiveMode": 2 },
+						"west": { "texture": "#brass", "uv": [ 5.0, 6.5, 10.0, 7.0 ], "reflectiveMode": 2 },
+						"up": { "texture": "#brass", "uv": [ 5.0, 8.0, 10.0, 13.0 ], "reflectiveMode": 2 },
+						"down": { "texture": "#brass", "uv": [ 7.0, 4.5, 12.0, 9.5 ], "reflectiveMode": 2 }
+					}
+				},
+				{
+					"name": "Cube5",
+					"from": [ -1.5, 0.1015, -1.5 ], 
+					"to": [ 3.5, 0.9045, 3.5 ], 
+					"rotationOrigin": [ 1.0, 0.0, 1.0 ],
+					"rotationY": 122.5,
+					"faces": {
+						"north": { "texture": "#brass", "uv": [ 5.5, 4.5, 10.5, 5.0 ], "reflectiveMode": 2 },
+						"east": { "texture": "#brass", "uv": [ 2.5, 5.0, 7.5, 5.5 ], "reflectiveMode": 2 },
+						"south": { "texture": "#brass", "uv": [ 5.5, 2.5, 10.5, 3.0 ], "reflectiveMode": 2 },
+						"west": { "texture": "#brass", "uv": [ 5.5, 4.0, 10.5, 4.5 ], "reflectiveMode": 2 },
+						"up": { "texture": "#brass", "uv": [ 6.0, 4.5, 11.0, 9.5 ], "reflectiveMode": 2 },
+						"down": { "texture": "#brass", "uv": [ 5.5, 5.5, 10.5, 10.5 ], "reflectiveMode": 2 }
+					}
+				}
+			]
+		}
+	]}

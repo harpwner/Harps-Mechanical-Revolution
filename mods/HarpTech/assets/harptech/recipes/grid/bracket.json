@@ -1,0 +1,25 @@
+﻿{
+    "ingredientPattern": "BFB,_P_",
+    "ingredients": {
+        "B": {
+            "type": "item",
+            "code": "bracketpiece"
+        },
+        "F": {
+            "type": "item",
+            "code": "game:fat"
+        },
+        "P": {
+            "type": "item",
+            "code": "game:metalplate-iron"
+        }
+    },
+    "width": 3,
+    "height": 2,
+    "output": {
+        "type": "item",
+        "code": "bracket",
+        "quantity": 1
+    }
+}
+	

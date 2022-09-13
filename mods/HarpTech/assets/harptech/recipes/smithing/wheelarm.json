@@ -1,0 +1,20 @@
+﻿{
+    "ingredient": {
+        "type": "item",
+        "code": "game:ingot-*",
+        "name": "metal",
+        "allowedVariants": [ "brass" ]
+    },
+    "name": "wheelarm",
+    "pattern": [
+        [
+            "######__________",
+            "################",
+            "######__________"
+        ]
+    ],
+    "output": {
+        "type": "item",
+        "code": "wheelarm"
+    }
+}

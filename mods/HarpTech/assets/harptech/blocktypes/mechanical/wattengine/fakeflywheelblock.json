@@ -1,0 +1,39 @@
+﻿{
+    "code": "fakeflywheelblock",
+    "class": "game:Block",
+    "entityClass": "BEFakeBlock",
+    "shape": { "base": "game:block/basic/nothing" },
+    "blockmaterial": "Metal",
+    "drops": [],
+    "sidesolid": {
+        "all": false
+    },
+    "sideopaque": {
+        "all": false
+    },
+    "rainPermeable": true,
+    "resistance": 4,
+    "sounds": {
+        "place": "game:block/anvil3",
+        "walk": "game:walk/stone1",
+        "hit": "game:block/plate",
+        "break": "game:block/anvil3"
+    },
+    "lightAbsorption": 0,
+    "selectionBox": {
+        "x1": 0,
+        "y1": 0,
+        "z1": 0,
+        "x2": 1,
+        "y2": 1,
+        "z2": 1
+    },
+    "collisionBox": {
+        "x1": 0,
+        "y1": 0,
+        "z1": 0,
+        "x2": 1,
+        "y2": 1,
+        "z2": 1
+    }
+}

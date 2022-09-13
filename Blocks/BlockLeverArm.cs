@@ -32,9 +32,13 @@ namespace HarpTech.Blocks
                 checkPos.Add(orient[0].Opposite);
             }
 
-            PlaceFakeBlocks(orient[0], checkPos.AddCopy(orient[0]), blockSel.Position);
+            if(base.TryPlaceBlock(world, byPlayer, itemstack, blockSel, ref failureCode))
+            {
+                PlaceFakeBlocks(orient[0], checkPos.AddCopy(orient[0]), blockSel.Position);
+                return true;
+            }
 
-            return base.TryPlaceBlock(world, byPlayer, itemstack, blockSel, ref failureCode);
+            return false;
         }
 
         void PlaceFakeBlocks(BlockFacing face, BlockPos start, BlockPos parentPos)

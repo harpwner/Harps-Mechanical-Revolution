@@ -1,0 +1,70 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"iron": "/Users/HARPWNER/AppData/Roaming/Vintagestory/assets/survival/textures/block/metal/plate/iron"
+	},
+	"elements": [
+		{
+			"name": "Cube1",
+			"from": [ 4.0, 0.0, 3.0 ], 
+			"to": [ 12.0, 1.0, 9.0 ], 
+			"rotationOrigin": [ 4.0, 0.0, 3.0 ],
+			"faces": {
+				"north": { "texture": "#iron", "uv": [ 0.0, 0.0, 8.0, 1.0 ] },
+				"east": { "texture": "#iron", "uv": [ 0.0, 0.0, 6.0, 1.0 ] },
+				"south": { "texture": "#iron", "uv": [ 0.0, 0.0, 8.0, 1.0 ] },
+				"west": { "texture": "#iron", "uv": [ 0.0, 0.0, 6.0, 1.0 ] },
+				"up": { "texture": "#iron", "uv": [ 0.0, 0.0, 8.0, 6.0 ] },
+				"down": { "texture": "#iron", "uv": [ 0.0, 0.0, 8.0, 6.0 ] }
+			}
+		},
+		{
+			"name": "Cube2",
+			"from": [ 4.0, 0.0, 9.0 ], 
+			"to": [ 7.0, 1.0, 11.0 ], 
+			"rotationOrigin": [ 4.0, 0.0, 9.0 ],
+			"faces": {
+				"north": { "texture": "#iron", "uv": [ 0.0, 0.0, 3.0, 1.0 ] },
+				"east": { "texture": "#iron", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+				"south": { "texture": "#iron", "uv": [ 0.0, 0.0, 3.0, 1.0 ] },
+				"west": { "texture": "#iron", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+				"up": { "texture": "#iron", "uv": [ 0.0, 0.0, 3.0, 2.0 ] },
+				"down": { "texture": "#iron", "uv": [ 0.0, 0.0, 3.0, 2.0 ] }
+			}
+		},
+		{
+			"name": "Cube3",
+			"from": [ 9.0, 0.0, 9.0 ], 
+			"to": [ 12.0, 1.0, 11.0 ], 
+			"rotationOrigin": [ 9.0, 0.0, 9.0 ],
+			"faces": {
+				"north": { "texture": "#iron", "uv": [ 0.0, 0.0, 3.0, 1.0 ] },
+				"east": { "texture": "#iron", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+				"south": { "texture": "#iron", "uv": [ 0.0, 0.0, 3.0, 1.0 ] },
+				"west": { "texture": "#iron", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+				"up": { "texture": "#iron", "uv": [ 0.0, 0.0, 3.0, 2.0 ] },
+				"down": { "texture": "#iron", "uv": [ 0.0, 0.0, 3.0, 2.0 ] }
+			}
+		},
+		{
+			"name": "Cube4",
+			"from": [ 4.0, 0.0, 11.0 ], 
+			"to": [ 12.0, 1.0, 13.0 ], 
+			"rotationOrigin": [ 4.0, 0.0, 11.0 ],
+			"faces": {
+				"north": { "texture": "#iron", "uv": [ 0.0, 0.0, 8.0, 1.0 ] },
+				"east": { "texture": "#iron", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+				"south": { "texture": "#iron", "uv": [ 0.0, 0.0, 8.0, 1.0 ] },
+				"west": { "texture": "#iron", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+				"up": { "texture": "#iron", "uv": [ 0.0, 0.0, 8.0, 2.0 ] },
+				"down": { "texture": "#iron", "uv": [ 0.0, 0.0, 8.0, 2.0 ] }
+			}
+		}
+	]}

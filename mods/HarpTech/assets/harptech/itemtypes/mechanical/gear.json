@@ -1,0 +1,77 @@
+﻿{
+	"code": "gear",
+	"heldTpHitAnimation": "placeblock",
+	"maxstacksize": 16,
+	"shape": { "base": "item/wattengine/brass_gear" },
+	"textures": {
+		"brass": { "base": "game:block/metal/plate/brass" }
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"harpmechanics": [ "*" ]
+	},
+	"guiTransform": {
+		"rotation": {
+			"x": 90,
+			"y": 15,
+			"z": -15
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 0,
+			"z": 0.5
+		},
+		"scale": 2.4
+	},
+	"groundTransform": {
+		"translation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 0,
+			"z": 0.1
+		},
+		"scale": 3.2
+	},
+	"fpHandTransform": {
+		"translation": {
+			"x": -1,
+			"y": 0,
+			"z": 0.2
+		},
+		"rotation": {
+			"x": 0,
+			"y": 180,
+			"z": 0
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 0.5,
+			"z": 0.5
+		},
+		"scale": 2
+	},
+	"heldTpIdleAnimation": "holdbothhandslarge",
+	"heldTpUseAnimation": "twohandplaceblock",
+	"tpHandTransform": {
+		"translation": {
+			"x": -1.8,
+			"y": -0.91,
+			"z": -0.6
+		},
+		"rotation": {
+			"x": 100,
+			"y": 0,
+			"z": -78
+		},
+		"scale": 1
+	}
+}

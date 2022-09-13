@@ -1,0 +1,21 @@
+﻿{
+    "ingredientPattern": "A,B",
+    "ingredients": {
+        "A": {
+            "type": "item",
+            "code": "arm"
+        },
+        "B": {
+            "type": "item",
+            "code": "bracket"
+        }
+    },
+    "width": 1,
+    "height": 2,
+    "output": {
+        "type": "block",
+        "code": "leverarm-north",
+        "quantity": 1
+    }
+}
+	

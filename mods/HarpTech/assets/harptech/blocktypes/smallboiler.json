@@ -1,0 +1,88 @@
+﻿{
+    "code": "boilersmall",
+    "class": "BlockBoiler",
+    "entityClass": "BESmallBoiler",
+    "shape": { "base": "block/smallboiler" },
+    "blockmaterial": "Metal",
+    "creativeinventory": {
+        "general": [ "*" ],
+        "harpmechanics": [ "*" ]
+    },
+    "textures": {
+        "iron1": { "base": "game:block/metal/sheet/iron1" },
+        "iron": { "base": "game:block/metal/plate/iron" }
+    },
+    "sidesolid": {
+        "all": true
+    },
+    "sideopaque": {
+        "all": false
+    },
+    "collisionbox": {
+        "x1": 0,
+        "y1": 0,
+        "z1": 0,
+        "x2": 1,
+        "y2": 1,
+        "z2": 1
+    },
+    "selectionbox": {
+        "x1": 0,
+        "y1": 0,
+        "z1": 0,
+        "x2": 1,
+        "y2": 1,
+        "z2": 1
+    },
+    "rainPermeable": false,
+    "resistance": 3.5,
+    "lightAbsorption": 0,
+    "maxStackSize": 4,
+    "guiTransform": {
+        "origin": {
+            "x": 0.5,
+            "y": 0.5,
+            "z": 0.5
+        },
+        "scale": 1
+    },
+    "groundTransform": {
+        "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "origin": {
+            "x": 0.5,
+            "y": 0,
+            "z": 0.1
+        },
+        "scale": 2.9
+    },
+    "sounds": {
+        "hit": "block/planks",
+        "break": "block/planks",
+        "place": "block/planks",
+        "walk": "walk/wood"
+    },
+    "heldTpIdleAnimation": "holdbothhandslarge",
+    "heldTpUseAnimation": "twohandplaceblock",
+    "tpHandTransform": {
+        "translation": {
+            "x": -1.23,
+            "y": -0.91,
+            "z": -0.8
+        },
+        "rotation": {
+            "x": -2,
+            "y": 25,
+            "z": -78
+        },
+        "scale": 0.4
+    }
+}

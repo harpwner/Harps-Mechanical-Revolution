@@ -1,0 +1,89 @@
+﻿{
+    "code": "wattpiston",
+    "class": "BlockPiston",
+    "entityClass": "BEPiston",
+    "creativeinventory": {
+        "general": [ "*" ],
+        "harpmechanics": [ "*" ]
+    },
+    "shape": { "base": "block/wattengine/piston_casing" },
+    "shapeinventory": { "base": "block/wattengine/piston_full" },
+    "blockmaterial": "Metal",
+    "textures": {
+        "iron1": { "base": "game:block/metal/sheet/iron1" },
+        "iron": { "base": "game:block/metal/plate/iron" }
+    },
+    "sidesolid": {
+        "all": false
+    },
+    "sideopaque": {
+        "all": false
+    },
+    "collisionbox": {
+        "x1": 0.125,
+        "y1": 0,
+        "z1": 0.125,
+        "x2": 0.875,
+        "y2": 0.8125,
+        "z2": 0.875
+    },
+    "selectionbox": {
+        "x1": 0.125,
+        "y1": 0,
+        "z1": 0.125,
+        "x2": 0.875,
+        "y2": 0.8125,
+        "z2": 0.875
+    },
+    "rainPermeable": true,
+    "resistance": 3.5,
+    "lightAbsorption": 0,
+    "maxStackSize": 1,
+    "guiTransform": {
+        "origin": {
+            "x": 0.45,
+            "y": 0.5,
+            "z": 0.5
+        },
+        "scale": 1
+    },
+    "groundTransform": {
+        "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "origin": {
+            "x": 0.5,
+            "y": 0,
+            "z": 0.1
+        },
+        "scale": 3
+    },
+    "sounds": {
+        "hit": "block/planks",
+        "break": "block/planks",
+        "place": "block/planks",
+        "walk": "walk/wood"
+    },
+    "heldTpIdleAnimation": "holdbothhandslarge",
+    "heldTpUseAnimation": "twohandplaceblock",
+    "tpHandTransform": {
+        "translation": {
+            "x": -1,
+            "y": -0.9,
+            "z": -0.6
+        },
+        "rotation": {
+            "x": 25,
+            "y": 0,
+            "z": -80
+        },
+        "scale": 0.5
+    }
+}

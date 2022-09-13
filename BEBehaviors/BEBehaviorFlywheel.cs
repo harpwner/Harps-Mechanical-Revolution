@@ -29,6 +29,11 @@ namespace HarpTech.BEBehaviors
 
         public override float AngleRad => GetAngleRad();
 
+
+        /// <summary>
+        /// Variation of base mech power AngleRad. Takes the input angle in radians and, instead of forcing it between 0 and 2pi, allows the angle to go to 4pi. This is to allow the other components of the watt engine to divide the angle by 2 without jank.
+        /// </summary>
+        /// <returns>The angle in radians</returns>
         float GetAngleRad()
         {
             if (network == null) return lastKnownAngleRad;
@@ -85,6 +90,9 @@ namespace HarpTech.BEBehaviors
             return mesh;
         }
 
+
+        /// <summary>Returns an array of integers based on the orientation of the flywheel. Used for rendering.</summary>
+        /// <returns>array of ints to define the way the flywheel and components should render.</returns>
         public int[] GetRendModifiers()
         {
             int[] modifiers = new int[4] { 0, 0, 0, 0 };
@@ -108,6 +116,9 @@ namespace HarpTech.BEBehaviors
             return modifiers;
         }
 
+
+        /// <summary>Game jank requires this method to exist</summary>
+        /// <returns>-1 if west, 1 if not west</returns>
         public int GetRotDir()
         {
             switch (Block.Variant["side"])
@@ -142,6 +153,8 @@ namespace HarpTech.BEBehaviors
             base.OnBlockUnloaded();
         }
 
+        /// <summary>Retreives the pressure of the piston attached to the mechanism, if it exists.</summary>
+        /// <returns>The pressure of the piston (should it exist)</returns>
         float GetEfficiency()
         {
             BEPiston piston = GetPiston();
@@ -154,6 +167,10 @@ namespace HarpTech.BEBehaviors
             }
         }
 
+        /// <summary>Determines whether a lever arm is placed properly relative to the flywheel. If a lever arm is found, sets the lever field.</summary>
+        /// <returns>
+        ///   true if a lever arm is found, false otherwise
+        /// </returns>
         bool HasLeverArm()
         {
             BlockFacing cw = this.face.GetCW();
@@ -174,6 +191,8 @@ namespace HarpTech.BEBehaviors
             return lever != null;
         }
 
+        /// <summary>Tries to find a piston placed properly relative to the flywheel</summary>
+        /// <returns>The piston, if found</returns>
         BEPiston GetPiston()
         {
             BlockFacing cw = this.face.GetCW();

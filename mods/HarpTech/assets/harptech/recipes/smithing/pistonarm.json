@@ -1,0 +1,25 @@
+﻿{
+    "ingredient": {
+        "type": "item",
+        "code": "game:ingot-*",
+        "name": "metal",
+        "allowedVariants": [ "iron" ]
+    },
+    "name": "pistonarm",
+    "pattern": [
+        [
+            "________####",
+            "############",
+            "________####"
+        ],
+        [
+            "________####",
+            "############",
+            "________####"
+        ]
+    ],
+    "output": {
+        "type": "item",
+        "code": "pistonarm"
+    }
+}

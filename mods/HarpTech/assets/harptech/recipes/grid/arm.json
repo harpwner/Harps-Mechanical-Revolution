@@ -1,0 +1,30 @@
+﻿{
+    "ingredientPattern": "SH_,PPP",
+    "ingredients": {
+        "S": {
+            "type": "item",
+            "code": "game:saw-*",
+            "isTool": true,
+            "toolDurabilityCost": 20
+        },
+        "H": {
+            "type": "item",
+            "code": "game:hammer-*",
+            "isTool": true,
+            "toolDurabilityCost": 20
+        },
+        "P": {
+            "type": "item",
+            "code": "game:metalplate-brass",
+            "quantity": 3
+        }
+    },
+    "width": 3,
+    "height": 2,
+    "output": {
+        "type": "item",
+        "code": "arm",
+        "quantity": 1
+    }
+}
+	

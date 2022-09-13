@@ -1,0 +1,26 @@
+﻿{
+    "ingredient": {
+        "type": "item",
+        "code": "game:ingot-*",
+        "name": "metal",
+        "allowedVariants": [ "iron" ]
+    },
+    "name": "bracketpiece",
+    "pattern": [
+        [
+            "########",
+            "########",
+            "###__###",
+            "###__###",
+            "########",
+            "########",
+            "########",
+            "########",
+            "########"
+        ]
+    ],
+    "output": {
+        "type": "item",
+        "code": "bracketpiece"
+    }
+}

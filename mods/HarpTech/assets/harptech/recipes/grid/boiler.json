@@ -1,0 +1,32 @@
+﻿{
+    "ingredientPattern": "HR_,PTP,_R_",
+    "ingredients": {
+        "H": {
+            "type": "item",
+            "code": "game:hammer-*",
+            "isTool": true,
+            "toolDurabilityCost": 20
+        },
+        "P": {
+            "type": "item",
+            "code": "game:metalplate-iron"
+        },
+        "T": {
+            "type": "item",
+            "code": "game:metalplate-iron",
+            "quantity": 2
+        },
+        "R": {
+            "type": "item",
+            "code": "game:hoop-iron"
+        }
+    },
+    "width": 3,
+    "height": 3,
+    "output": {
+        "type": "block",
+        "code": "boilersmall",
+        "quantity": 1
+    }
+}
+	

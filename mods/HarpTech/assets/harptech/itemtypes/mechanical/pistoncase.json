@@ -1,0 +1,69 @@
+﻿{
+	"code": "pistoncase",
+	"heldTpHitAnimation": "placeblock",
+	"maxstacksize": 4,
+	"shape": { "base": "block/wattengine/piston_casing" },
+	"textures": {
+		"iron": { "base": "game:block/metal/plate/iron" },
+		"iron1": { "base": "game:block/metal/sheet/iron1" }
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"harpmechanics": [ "*" ]
+	},
+	"guiTransform": {
+		"rotation": {
+			"x": 165,
+			"y": 15,
+			"z": 0
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 0.5,
+			"z": 0.5
+		},
+		"scale": 1
+	},
+	"fpHandTransform": {
+		"translation": {
+			"x": 0,
+			"y": -0.1,
+			"z": 0
+		},
+		"rotation": {
+			"x": 6,
+			"y": 49,
+			"z": 20
+		}
+	},
+	"tpHandTransform": {
+		"translation": {
+			"x": -1.9,
+			"y": -1.6,
+			"z": -1.2
+		},
+		"rotation": {
+			"x": -25,
+			"y": 15,
+			"z": -92
+		}
+	},
+	"groundTransform": {
+		"translation": {
+			"x": 0,
+			"y": 0.17,
+			"z": 0
+		},
+		"rotation": {
+			"x": 0,
+			"y": 0,
+			"z": 0
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 0,
+			"z": 0.5
+		},
+		"scale": 4
+	}
+}

@@ -1,0 +1,68 @@
+﻿{
+	"code": "flywheelsection",
+	"heldTpHitAnimation": "placeblock",
+	"maxstacksize": 2,
+	"shape": { "base": "item/wattengine/flywheel_section" },
+	"textures": {
+		"brass": { "base": "game:block/metal/plate/brass" }
+	},
+	"creativeinventory": {
+		"general": [ "*" ],
+		"harpmechanics": [ "*" ]
+	},
+	"guiTransform": {
+		"rotation": {
+			"x": 142,
+			"y": -35,
+			"z": 0
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 0.5,
+			"z": 0.5
+		},
+		"scale": 1.4
+	},
+	"fpHandTransform": {
+		"translation": {
+			"x": 0.05,
+			"y": -0.1,
+			"z": 0
+		},
+		"rotation": {
+			"x": 6,
+			"y": 49,
+			"z": 20
+		}
+	},
+	"tpHandTransform": {
+		"translation": {
+			"x": -1.9,
+			"y": -1.6,
+			"z": -1.2
+		},
+		"rotation": {
+			"x": -25,
+			"y": 15,
+			"z": -92
+		}
+	},
+	"groundTransform": {
+		"translation": {
+			"x": 0,
+			"y": 0.0625,
+			"z": 0
+		},
+		"rotation": {
+			"x": 90,
+			"y": 0,
+			"z": 0
+		},
+		"origin": {
+			"x": 0.5,
+			"y": 0,
+			"z": 0.5
+		},
+		"scale": 5
+	}
+}

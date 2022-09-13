@@ -1,0 +1,23 @@
+﻿{
+    "ingredientPattern": "_H_,PPP,_P_",
+    "ingredients": {
+        "H": {
+            "type": "item",
+            "code": "game:hammer-*",
+            "isTool": true,
+            "toolDurabilityCost": 20
+        },
+        "P": {
+            "type": "item",
+            "code": "game:metalplate-iron"
+        }
+    },
+    "width": 3,
+    "height": 3,
+    "output": {
+        "type": "item",
+        "code": "pistoncase",
+        "quantity": 1
+    }
+}
+	

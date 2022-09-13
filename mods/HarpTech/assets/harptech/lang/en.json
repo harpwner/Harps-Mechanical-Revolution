@@ -1,0 +1,24 @@
+{
+	"block-aeolipile-*": "Aeolipile",
+	"block-gearbox-*": "Gearbox",
+	"block-boilersmall": "Small Boiler",
+	"block-wattpiston": "Piston Assembly",
+	"block-leverarm-*": "Lever Arm Assembly",
+	"block-flywheel-*": "Geared Flywheel",
+	"block-fakeflywheelblock": "Geared Flywheel",
+	"block-fakeleverblock": "Lever Arm Assembly",
+	"item-arm": "Lever Arm",
+	"item-gear": "Brass Gear",
+	"item-pistonbottom": "Piston Bottom",
+	"item-pistoncase": "Piston Case",
+	"item-piston": "Piston",
+	"item-pistonarm": "Piston Arm",
+	"item-wheelarm": "Flywheel Arm",
+	"item-flywheelsection": "Flywheel Rim Section",
+	"item-bracket": "Lever Arm Bracket",
+	"item-bracketpiece": "Bracket",
+	"game:tabname-harpmechanics": "Harp Mechanics",
+
+	"wattengine-title": "Watt Engine Assembly Guide",
+	"wattengine-text": "<strong>Watt Engine Assembly Guide</strong><br><i>This guide is to help you assemble the Watt Steam Engine!</i><br><br>Here's what you will need:<br> - <a href=\"handbook://block-firepit-cold\">Firepit</a><br> - <a href=\"handbook://block-harptech:boilersmall\">Small Boiler</a><br> - <a href=\"handbook://block-harptech:wattpiston\">Piston</a><br> - <a href=\"handbook://block-harptech:leverarm-north\">Lever Arm</a><br> - <a href=\"handbook://block-harptech:flywheel-north\">Flywheel</a><br><br>Once you have these materials, construct the engine like so:<strong><br><br>\t= = A = = 0<br>\tP 0 0 = = =<br>\tB 0 0 = F =<br>\tH 0 0 = = =</strong><br><br> A: Lever Arm<br> P: Piston<br> B: Boiler<br> F: Flywheel<br> H: Firepit<br> =: Space must be empty<br> 0: Anything can go here<br><br><strong>Operation</strong><br>The Firepit and Boiler are the source of the Watt Engine's power. The small boiler can hold up to 10L of water, which is heated by the firepit to create steam. The hotter the firepit, the more steam, the more power. It is recommended to use Coals for their temperature and burn time, giving a higher power output.<br><br><i>Make sure the boiler doesn't run out of water!</i>"
+}

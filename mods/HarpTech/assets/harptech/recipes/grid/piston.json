@@ -1,0 +1,21 @@
+﻿{
+    "ingredientPattern": "A,B",
+    "ingredients": {
+        "B": {
+            "type": "item",
+            "code": "pistonbottom"
+        },
+        "A": {
+            "type": "item",
+            "code": "pistonarm"
+        }
+    },
+    "width": 1,
+    "height": 2,
+    "output": {
+        "type": "item",
+        "code": "piston",
+        "quantity": 1
+    }
+}
+	

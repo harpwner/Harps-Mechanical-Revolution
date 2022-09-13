@@ -24,9 +24,13 @@ namespace HarpTech.Blocks
 
             if(!CheckSurrounding(checkPos, orient[0])) { return false; }
 
-            PlaceFakeBlocks(blockSel.Position);
+            if(base.TryPlaceBlock(world, byPlayer, itemstack, blockSel, ref failureCode))
+            {
+                PlaceFakeBlocks(blockSel.Position);
+                return true;
+            }
 
-            return base.TryPlaceBlock(world, byPlayer, itemstack, blockSel, ref failureCode);
+            return false;
         }
 
         bool CheckSurrounding(BlockPos checkPos, BlockFacing dir)
