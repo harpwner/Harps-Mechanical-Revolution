@@ -9,7 +9,7 @@
         },
         "F": {
             "type": "item",
-            "code": "flywheelsection",
+            "code": "flywheelsection-brass",
             "quantity": 2
         },
         "P": {
@@ -23,7 +23,7 @@
         },
         "G": {
             "type": "item",
-            "code": "gear",
+            "code": "gear-brass",
             "quantity": 2
         },
         "A": {

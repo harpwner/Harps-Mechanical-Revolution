@@ -22,7 +22,7 @@ namespace HarpTech.BEBehaviors
 
         protected override float Resistance => 0.6f;
         protected override double AccelerationFactor => 0.06d;
-        protected override float TorqueFactor => GetEfficiency() * 8;
+        protected override float TorqueFactor => GetEfficiency() * 9;
         protected override float TargetSpeed => GetEfficiency() / 4f;
 
         public BEBehaviorFlywheel(BlockEntity blockentity) : base(blockentity) { }

@@ -1,5 +1,5 @@
 ﻿{
-	"code": "flywheelsection",
+	"code": "flywheelsection-brass",
 	"heldTpHitAnimation": "placeblock",
 	"maxstacksize": 2,
 	"shape": { "base": "item/wattengine/flywheel_section" },

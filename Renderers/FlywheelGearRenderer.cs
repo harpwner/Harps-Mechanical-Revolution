@@ -52,8 +52,8 @@ namespace HarpTech.Renderers
             IStandardShaderProgram prog = rpi.PreparedStandardShader(pos.X, pos.Y, pos.Z);
             prog.Tex2D = api.BlockTextureAtlas.AtlasTextureIds[0];
 
-            double translateCos = 6.55f / 16f * Math.Cos(flywheel.AngleRad / 2);
-            double translateSin = 6.55f / 16f * Math.Sin(flywheel.AngleRad / 2);
+            double translateCos = 6.1f / 16f * Math.Cos(flywheel.AngleRad / 2);
+            double translateSin = 6.1f / 16f * Math.Sin(flywheel.AngleRad / 2);
             int[] modifier = flywheel.GetRendModifiers();
 
             prog.ModelMatrix = ModelMat

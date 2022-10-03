@@ -3,7 +3,7 @@ using HarpTech.Enums;
 
 namespace HarpTech.Interfaces
 {
-    interface IFluidPipe
+    interface IFluidBase
     {
         /// <summary>
         /// Retrieves the amount of fluid contained in the pipe, but does not return what type.

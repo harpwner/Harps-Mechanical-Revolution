@@ -1,0 +1,130 @@
+{
+    "code": "producerdummy",
+    "class": "BlockFluidPipe",
+    "entityClass": "BEFluidProducerBase",
+    "creativeinventory": {
+        "general": [ "*-none" ],
+        "harpmechanics": [ "*-none" ]
+    },
+    "attributes": {
+		"handbook": {
+			"groupBy": ["producerdummy-*"]
+		}
+	},
+    "variantgroups": [
+        {
+            "code": "attach",
+            "states": [ "none", "m", "n", "s", "e", "w", "u", "d", "ns", "ne", "nw", "nu", "nd", "nse", "nsw", "nsu", "nsd", "nsud", "nsew", "nseu", "nsed", "nsewu", "nsewd", "nsewud", "nswu", "nswd", "nswud", "neu", "ned", "neud", "new", "newu", "newd", "newud", "nwu", "nwd", "nwud", "nud", "se", "sw", "su", "sd", "sew", "seu", "sed", "seud", "sewu", "sewd", "sewud", "swu", "swd", "swud", "sud", "ew", "ewu", "ewd", "ewud", "eu", "ed", "eud", "wu", "wd", "wud", "ud" ]
+        }
+    ],
+    "blockmaterial": "Metal",
+    "resistance": 4,
+    "shapeinventory": { "base": "piping/fluid/pipe_1" },
+    "shapebytype": {
+        "*-none": { "base": "piping/fluid/pipe_1" },
+        "*-m": { "base": "piping/fluid/pipe_core" },
+        "*-n": { "base": "piping/fluid/pipe_1", "rotateY": 90 },
+        "*-s": { "base": "piping/fluid/pipe_1", "rotateY": 270 },
+        "*-e": { "base": "piping/fluid/pipe_1" },
+        "*-w": { "base": "piping/fluid/pipe_1", "rotateY": 180 },
+        "*-u": { "base": "piping/fluid/pipe_1", "rotateZ": 90 },
+        "*-d": { "base": "piping/fluid/pipe_1", "rotateZ": 270 },
+        "*-ns": { "base": "piping/fluid/pipe_1", "rotateY": 90 },
+        "*-ne": { "base": "piping/fluid/pipe_2", "rotateX": 90, "rotateZ": 90 },
+        "*-nw": { "base": "piping/fluid/pipe_2", "rotateX": 90 },
+        "*-nu": { "base": "piping/fluid/pipe_2", "rotateY": 90, "rotateZ": 180},
+        "*-nd": { "base": "piping/fluid/pipe_2", "rotateY": 270 },
+        "*-nse": { "base": "piping/fluid/pipe_3s", "rotateX": 90, "rotateZ": 90 },
+        "*-nsw": { "base": "piping/fluid/pipe_3s", "rotateX": 90, "rotateZ": 270 },
+        "*-nsu": { "base": "piping/fluid/pipe_3s", "rotateX": 180, "rotateY": 90 },
+        "*-nsd": { "base": "piping/fluid/pipe_3s", "rotateY": 90 },
+        "*-nsud": { "base": "piping/fluid/pipe_4s", "rotateY": 90 },
+        "*-nsew": { "base": "piping/fluid/pipe_4s", "rotateX": 90 },
+        "*-nseu": { "base": "piping/fluid/pipe_4", "rotateY": 90, "rotateZ": 180 },
+        "*-nsed": { "base": "piping/fluid/pipe_4", "rotateY": 90 },
+        "*-nsewu": { "base": "piping/fluid/pipe_5", "rotateX": 270 },
+        "*-nsewd": { "base": "piping/fluid/pipe_5", "rotateX": 90 },
+        "*-nsewud": { "base": "piping/fluid/pipe_6" },
+        "*-nswu": { "base": "piping/fluid/pipe_4", "rotateX": 270, "rotateZ": 270 },
+        "*-nswd": { "base": "piping/fluid/pipe_4", "rotateY": 270 },
+        "*-nswud": { "base": "piping/fluid/pipe_5", "rotateY": 270 },
+        "*-neu": { "base": "piping/fluid/pipe_3", "rotateX": 180, "rotateY": 90 },
+        "*-ned": { "base": "piping/fluid/pipe_3", "rotateY": 180 },
+        "*-neud": { "base": "piping/fluid/pipe_4", "rotateY": 90, "rotateZ": 90 },
+        "*-new": { "base": "piping/fluid/pipe_3s", "rotateX": 90 },
+        "*-newu": { "base": "piping/fluid/pipe_4", "rotateX": 180 },
+        "*-newd": { "base": "piping/fluid/pipe_4", "rotateX": 90 },
+        "*-newud": { "base": "piping/fluid/pipe_5", "rotateY": 180 },
+        "*-nwu": { "base": "piping/fluid/pipe_3", "rotateX": 180 },
+        "*-nwd": { "base": "piping/fluid/pipe_3", "rotateY": 270 },
+        "*-nwud": { "base": "piping/fluid/pipe_4", "rotateX": 90, "rotateY": 270 },
+        "*-nud": { "base": "piping/fluid/pipe_3s", "rotateX": 90, "rotateY": 90 },
+        "*-se": { "base": "piping/fluid/pipe_2", "rotateX": 270, "rotateZ": 90 },
+        "*-sw": { "base": "piping/fluid/pipe_2", "rotateX": 270 },
+        "*-su": { "base": "piping/fluid/pipe_2", "rotateX": 180, "rotateY": 270 },
+        "*-sd": { "base": "piping/fluid/pipe_2", "rotateY": 90 },
+        "*-sew": { "base": "piping/fluid/pipe_3s", "rotateX": 270 },
+        "*-seu": { "base": "piping/fluid/pipe_3", "rotateX": 270, "rotateZ": 90 },
+        "*-sed": { "base": "piping/fluid/pipe_3", "rotateY": 90 },
+        "*-seud": { "base": "piping/fluid/pipe_4", "rotateZ": 90 },
+        "*-sewu": { "base": "piping/fluid/pipe_4", "rotateX": 270 },
+        "*-sewd": { "base": "piping/fluid/pipe_4" },
+        "*-sewud": { "base": "piping/fluid/pipe_5" },
+        "*-swu": { "base": "piping/fluid/pipe_3", "rotateX": 270 },
+        "*-swd": { "base": "piping/fluid/pipe_3" },
+        "*-swud": { "base": "piping/fluid/pipe_4", "rotateZ": 270 },
+        "*-sud": { "base": "piping/fluid/pipe_3s", "rotateX": 270, "rotateY": 90 },
+        "*-eu": { "base": "piping/fluid/pipe_2", "rotateZ": 180 },
+        "*-ed": { "base": "piping/fluid/pipe_2", "rotateY": 180 },
+        "*-eud": { "base": "piping/fluid/pipe_3s", "rotateZ": 90 },
+        "*-ew": { "base": "piping/fluid/pipe_1" },
+        "*-ewu": { "base": "piping/fluid/pipe_3s", "rotateX": 180 },
+        "*-ewd": { "base": "piping/fluid/pipe_3s" },
+        "*-ewud": { "base": "piping/fluid/pipe_4s" },
+        "*-wu": { "base": "piping/fluid/pipe_2", "rotateZ": 270 },
+        "*-wd": { "base": "piping/fluid/pipe_2" },
+        "*-wud": { "base": "piping/fluid/pipe_3s", "rotateZ": 270 },
+        "*-ud": { "base": "piping/fluid/pipe_1", "rotateZ": 90 }
+    },
+    "lightAbsorptionbytype": {
+        "*-m": 99,
+        "*": 0
+    },
+    "sidesolidbytype": {
+        "*-m": { "all": "true" },
+        "*": { "all": "false" }
+    },
+    "sideopaquebytype": {
+        "*-m": { "all": "true" },
+        "*": { "all": "false" }
+    },
+    "textures": {
+        "all": { "base": "game:block/metal/plate/copper" }
+    },
+    "drops": [
+        {
+            "type": "block",
+            "code": "producerdummy-none"
+        }
+    ],
+    "sounds": {
+        "place": "game:block/anvil",
+        "break": "game:block/anvil",
+        "walk": "game:walk/metal"
+    },
+    "collisionSelectionBoxesByType": {
+        "*": [
+            {
+                "x1": 0.375,
+                "y1": 0.375,
+                "z1": 0.375,
+                "x2": 0.625,
+                "y2": 0.625,
+                "z2": 0.625
+            }
+        ]
+    },
+    "guiTransform": {
+        "scale": 1.5
+    }
+}

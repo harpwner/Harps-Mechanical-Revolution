@@ -56,7 +56,7 @@ namespace HarpTech.Renderers
             if(piston.lever != null)
             {
                 //old eq: (float)(((1f / 3f) * piston.lever.pistonMod * Math.Sin(piston.lever.AngleRad)) + (1f / 3f));
-                angle = ((6.55f / 16f) * (float)Math.Sin(piston.lever.AngleRad)) + (1f / 3f);
+                angle = ((6.55f / 16f) * piston.lever.pistonMod * (float)Math.Sin(piston.lever.AngleRad)) + (1f / 3f);
             }
 
 

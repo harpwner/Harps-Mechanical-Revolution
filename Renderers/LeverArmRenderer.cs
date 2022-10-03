@@ -52,9 +52,7 @@ namespace HarpTech.Renderers
             IStandardShaderProgram prog = rpi.PreparedStandardShader(pos.X, pos.Y, pos.Z);
             prog.Tex2D = api.BlockTextureAtlas.AtlasTextureIds[0];
 
-            //old eq: (float)Math.Atan((16f / 32f) * (1f / 3f) * Math.Sin(leverArm.AngleRad))
-
-            float armAngle = (float)Math.Asin((6.55f / 32f) * Math.Sin(leverArm.AngleRad));
+            float armAngle = (float)Math.Asin((5.515f / 32f) * Math.Sin(leverArm.AngleRad));
 
             prog.ModelMatrix = ModelMat
                 .Identity()

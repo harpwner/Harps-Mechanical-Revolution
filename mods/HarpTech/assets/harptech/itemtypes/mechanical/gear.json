@@ -1,5 +1,5 @@
 ﻿{
-	"code": "gear",
+	"code": "gear-brass",
 	"heldTpHitAnimation": "placeblock",
 	"maxstacksize": 16,
 	"shape": { "base": "item/wattengine/brass_gear" },
@@ -11,17 +11,22 @@
 		"harpmechanics": [ "*" ]
 	},
 	"guiTransform": {
+		"translation": {
+			"x": 2,
+			"y": 5,
+			"z": 0
+		},
 		"rotation": {
-			"x": 90,
+			"x": 143,
 			"y": 15,
-			"z": -15
+			"z": -11
 		},
 		"origin": {
 			"x": 0.5,
 			"y": 0,
 			"z": 0.5
 		},
-		"scale": 2.4
+		"scale": 3
 	},
 	"groundTransform": {
 		"translation": {
@@ -43,35 +48,28 @@
 	},
 	"fpHandTransform": {
 		"translation": {
-			"x": -1,
+			"x": 0,
 			"y": 0,
-			"z": 0.2
+			"z": -0.4
 		},
 		"rotation": {
-			"x": 0,
-			"y": 180,
-			"z": 0
+			"x": 11,
+			"y": 148,
+			"z": -3
 		},
-		"origin": {
-			"x": 0.5,
-			"y": 0.5,
-			"z": 0.5
-		},
-		"scale": 2
+		"scale": 3
 	},
-	"heldTpIdleAnimation": "holdbothhandslarge",
-	"heldTpUseAnimation": "twohandplaceblock",
 	"tpHandTransform": {
 		"translation": {
-			"x": -1.8,
-			"y": -0.91,
-			"z": -0.6
+			"x": -1.15,
+			"y": -0.7,
+			"z": -0.65
 		},
 		"rotation": {
-			"x": 100,
+			"x": 16,
 			"y": 0,
 			"z": -78
 		},
-		"scale": 1
+		"scale": 0.75
 	}
 }

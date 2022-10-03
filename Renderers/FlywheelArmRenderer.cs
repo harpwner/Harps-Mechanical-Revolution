@@ -52,8 +52,8 @@ namespace HarpTech.Renderers
             IStandardShaderProgram prog = rpi.PreparedStandardShader(pos.X, pos.Y, pos.Z);
             prog.Tex2D = api.BlockTextureAtlas.AtlasTextureIds[0];
 
-            double translateCos = 6.55f / 16f * Math.Cos(flywheel.AngleRad / 2);
-            double translateSin = 6.55f / 16f * Math.Sin(flywheel.AngleRad / 2);
+            double translateCos = 6.1f / 16f * Math.Cos(flywheel.AngleRad / 2);
+            double translateSin = 6.1f / 16f * Math.Sin(flywheel.AngleRad / 2);
             int[] modifier = flywheel.GetRendModifiers();
 
 
@@ -62,8 +62,8 @@ namespace HarpTech.Renderers
                 .Translate(pos.X - camPos.X, pos.Y - camPos.Y, pos.Z - camPos.Z)
                 .Translate(translateCos * modifier[0], translateSin * modifier[1], translateCos * modifier[2])
                 .Translate(0.5f, 0.5f, 0.5f)
-                .RotateZ((float)Math.Atan(((6.3f / 16f) * Math.Cos(flywheel.AngleRad / 2)) / 2) * modifier[0])
-                .RotateX((float)Math.Atan(((6.3f / 16f) * Math.Cos(flywheel.AngleRad / 2)) / 2) * -modifier[2])
+                .RotateZ((float)Math.Atan(((6.1f / 16f) * Math.Cos(flywheel.AngleRad / 2)) / 2) * modifier[0])
+                .RotateX((float)Math.Atan(((6.1f / 16f) * Math.Cos(flywheel.AngleRad / 2)) / 2) * -modifier[2])
                 .Translate(-0.5f, -0.5f, -0.5f)
                 .Values
             ;

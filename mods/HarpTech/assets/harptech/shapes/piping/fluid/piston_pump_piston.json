@@ -1,0 +1,148 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"copper1": "/Users/HARPWNER/AppData/Roaming/Vintagestory/assets/survival/textures/block/metal/sheet/copper1",
+		"generic": "/Users/HARPWNER/AppData/Roaming/Vintagestory/assets/survival/textures/block/wood/planks/generic"
+	},
+	"elements": [
+		{
+			"name": "Piston",
+			"from": [ 6.0, 8.0, 6.0 ], 
+			"to": [ 10.0, 12.5, 10.0 ], 
+			"rotationOrigin": [ 8.0, 13.0, 8.0 ],
+			"faces": {
+				"north": { "texture": "#copper1", "uv": [ 0.0, 0.0, 4.0, 4.5 ] },
+				"east": { "texture": "#copper1", "uv": [ 0.0, 0.0, 4.0, 4.5 ] },
+				"south": { "texture": "#copper1", "uv": [ 0.0, 0.0, 4.0, 4.5 ] },
+				"west": { "texture": "#copper1", "uv": [ 0.0, 0.0, 4.0, 4.5 ] },
+				"up": { "texture": "#copper1", "uv": [ 0.0, 0.0, 4.0, 4.0 ] },
+				"down": { "texture": "#copper1", "uv": [ 0.0, 0.0, 4.0, 4.0 ] }
+			},
+			"children": [
+				{
+					"name": "hinge",
+					"from": [ 1.0, 4.5, 1.0 ], 
+					"to": [ 1.5, 5.5, 3.0 ], 
+					"rotationOrigin": [ 1.0, 5.0, 2.0 ],
+					"faces": {
+						"north": { "texture": "#copper1", "uv": [ 0.0, 0.0, 0.5, 1.0 ] },
+						"east": { "texture": "#copper1", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+						"south": { "texture": "#copper1", "uv": [ 0.0, 0.0, 0.5, 1.0 ] },
+						"west": { "texture": "#copper1", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+						"up": { "texture": "#copper1", "uv": [ 0.0, 0.0, 0.5, 2.0 ] },
+						"down": { "texture": "#copper1", "uv": [ 0.0, 0.0, 0.5, 2.0 ] }
+					}
+				},
+				{
+					"name": "hinge27",
+					"from": [ 2.5, 4.5, 1.0 ], 
+					"to": [ 3.0, 5.5, 3.0 ], 
+					"rotationOrigin": [ 2.0, 5.0, 2.0 ],
+					"faces": {
+						"north": { "texture": "#copper1", "uv": [ 0.0, 0.0, 0.5, 1.0 ] },
+						"east": { "texture": "#copper1", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+						"south": { "texture": "#copper1", "uv": [ 0.0, 0.0, 0.5, 1.0 ] },
+						"west": { "texture": "#copper1", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+						"up": { "texture": "#copper1", "uv": [ 0.0, 0.0, 0.5, 2.0 ] },
+						"down": { "texture": "#copper1", "uv": [ 0.0, 0.0, 0.5, 2.0 ] }
+					}
+				}
+			]
+		},
+		{
+			"name": "Piston_arm",
+			"from": [ 7.5, 13.0, 7.5 ], 
+			"to": [ 8.5, 20.0, 8.5 ], 
+			"rotationOrigin": [ 8.0, 13.0, 8.0 ],
+			"faces": {
+				"north": { "texture": "#copper1", "uv": [ 0.0, 0.0, 1.0, 7.0 ] },
+				"east": { "texture": "#copper1", "uv": [ 0.0, 0.0, 1.0, 7.0 ] },
+				"south": { "texture": "#copper1", "uv": [ 0.0, 0.0, 1.0, 7.0 ] },
+				"west": { "texture": "#copper1", "uv": [ 0.0, 0.0, 1.0, 7.0 ] },
+				"up": { "texture": "#copper1", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+				"down": { "texture": "#copper1", "uv": [ 0.0, 0.0, 1.0, 1.0 ] }
+			},
+			"children": [
+				{
+					"name": "point",
+					"from": [ -0.5, 7.0, 0.0 ], 
+					"to": [ 1.5, 8.0, 1.0 ], 
+					"rotationOrigin": [ -1.0, 7.0, 0.0 ],
+					"faces": {
+						"north": { "texture": "#copper1", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+						"east": { "texture": "#copper1", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+						"south": { "texture": "#copper1", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+						"west": { "texture": "#copper1", "uv": [ 0.0, 0.0, 1.0, 1.0 ] },
+						"up": { "texture": "#copper1", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+						"down": { "texture": "#copper1", "uv": [ 0.0, 0.0, 2.0, 1.0 ] }
+					}
+				}
+			]
+		},
+		{
+			"name": "Axle",
+			"from": [ 0.0, 22.0, 7.0 ], 
+			"to": [ 5.0, 26.0, 9.0 ], 
+			"rotationOrigin": [ 0.0, 24.0, 8.0 ],
+			"rotationX": 180.0,
+			"faces": {
+				"north": { "texture": "#generic", "uv": [ 0.0, 0.0, 5.0, 4.0 ] },
+				"east": { "texture": "#generic", "uv": [ 0.0, 0.0, 2.0, 4.0 ] },
+				"south": { "texture": "#generic", "uv": [ 0.0, 0.0, 5.0, 4.0 ] },
+				"west": { "texture": "#generic", "uv": [ 0.0, 0.0, 2.0, 4.0 ] },
+				"up": { "texture": "#generic", "uv": [ 0.0, 0.0, 5.0, 2.0 ] },
+				"down": { "texture": "#generic", "uv": [ 0.0, 0.0, 5.0, 2.0 ] }
+			},
+			"children": [
+				{
+					"name": "Axle22",
+					"from": [ 0.0, 1.0, -1.0 ], 
+					"to": [ 7.0, 3.0, 0.0 ], 
+					"rotationOrigin": [ 0.0, 3.0, -1.0 ],
+					"faces": {
+						"north": { "texture": "#generic", "uv": [ 0.0, 0.0, 7.0, 2.0 ] },
+						"east": { "texture": "#generic", "uv": [ 0.0, 0.0, 1.0, 2.0 ] },
+						"south": { "texture": "#generic", "uv": [ 0.0, 0.0, 7.0, 2.0 ] },
+						"west": { "texture": "#generic", "uv": [ 0.0, 0.0, 1.0, 2.0 ] },
+						"up": { "texture": "#generic", "uv": [ 0.0, 0.0, 7.0, 1.0 ] },
+						"down": { "texture": "#generic", "uv": [ 0.0, 0.0, 7.0, 1.0 ] }
+					}
+				},
+				{
+					"name": "Axle23",
+					"from": [ 0.0, 1.0, 2.0 ], 
+					"to": [ 7.0, 3.0, 3.0 ], 
+					"rotationOrigin": [ 0.0, 3.0, 2.0 ],
+					"faces": {
+						"north": { "texture": "#generic", "uv": [ 0.0, 0.0, 7.0, 2.0 ] },
+						"east": { "texture": "#generic", "uv": [ 0.0, 0.0, 1.0, 2.0 ] },
+						"south": { "texture": "#generic", "uv": [ 0.0, 0.0, 7.0, 2.0 ] },
+						"west": { "texture": "#generic", "uv": [ 0.0, 0.0, 1.0, 2.0 ] },
+						"up": { "texture": "#generic", "uv": [ 0.0, 0.0, 7.0, 1.0 ] },
+						"down": { "texture": "#generic", "uv": [ 0.0, 0.0, 7.0, 1.0 ] }
+					}
+				},
+				{
+					"name": "pin",
+					"from": [ 5.0, 0.0, 0.0 ], 
+					"to": [ 7.0, 6.5, 2.0 ], 
+					"rotationOrigin": [ 5.0, 0.0, 0.0 ],
+					"faces": {
+						"north": { "texture": "#generic", "uv": [ 0.0, 0.0, 2.0, 6.5 ] },
+						"east": { "texture": "#generic", "uv": [ 0.0, 0.0, 2.0, 6.5 ] },
+						"south": { "texture": "#generic", "uv": [ 0.0, 0.0, 2.0, 6.5 ] },
+						"west": { "texture": "#generic", "uv": [ 0.0, 0.0, 2.0, 6.5 ] },
+						"up": { "texture": "#generic", "uv": [ 0.0, 0.0, 2.0, 2.0 ] },
+						"down": { "texture": "#generic", "uv": [ 0.0, 0.0, 2.0, 2.0 ] }
+					}
+				}
+			]
+		}
+	]}

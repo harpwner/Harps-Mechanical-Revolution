@@ -1,0 +1,187 @@
+{
+    "code": "machinerymolds",
+    "classByType": {
+        "machinerymolds-raw-*": "Block",
+        "machinerymolds-burned-*": "BlockToolMold"
+    },
+    "behaviorsByType": {
+        "*-raw-*": [
+            { "name": "GroundStorable", "properties": { "layout": "SingleCenter" } },
+            { "name": "Unplaceable" },
+            { "name": "RightClickPickup" }
+        ],
+        "*": [ { "name": "UnstableFalling" } ]
+    },
+    "variantgroups": [
+        {
+            "code": "materialtype",
+            "states": [ "raw", "burned" ]
+        },
+        {
+            "code": "tooltype",
+            "states": [ "flywheelsection", "gear1" ]
+        }
+    ],
+    "attributesByType": {
+        "machinerymolds-burned-flywheelsection": {
+            "requiredUnits": 250,
+            "fillHeight": 4,
+            "fillQuadsByLevel": [
+                {
+                    "x1": 1,
+                    "z1": 1,
+                    "x2": 14,
+                    "z2": 14
+                },
+                {
+                    "x1": 1,
+                    "z1": 1,
+                    "x2": 14,
+                    "z2": 14
+                },
+                {
+                    "x1": 1,
+                    "z1": 1,
+                    "x2": 14,
+                    "z2": 14
+                }
+            ],
+            "drop": {
+                "type": "Item",
+                "code": "flywheelsection-{metal}"
+            }
+        },
+        "machinerymolds-burned-gear1": {
+            "requiredUnits": 100,
+            "fillHeight": 2,
+            "fillQuadsByLevel": [
+                {
+                    "x1": 1,
+                    "z1": 1,
+                    "x2": 14,
+                    "z2": 14
+                },
+                {
+                    "x1": 1,
+                    "z1": 1,
+                    "x2": 14,
+                    "z2": 14
+                }
+            ],
+            "drop": {
+                "type": "Item",
+                "code": "gear-{metal}"
+            }
+        }
+    },
+    "entityClassByType": {
+        "machinerymolds-burned-*": "ToolMold"
+    },
+    "combustiblePropsByType": {
+        "machinerymolds-raw-*": {
+            "meltingPoint": 650,
+            "meltingDuration": 45,
+            "smeltedRatio": 1,
+            "smeltingType": "fire",
+            "smeltedStack": {
+                "type": "block",
+                "code": "machinerymolds-burned-{tooltype}"
+            },
+            "requiresContainer": false
+        }
+    },
+    "blockmaterial": "Ceramic",
+    "creativeinventory": {
+        "general": [ "*" ],
+        "harpmechanics": [ "*" ]
+    },
+    "replaceable": 700,
+    "resistance": 1.5,
+    "maxStackSize": 2,
+    "lightAbsorption": 0,
+    "texturesByType": {
+        "machinerymolds-raw-*": { "all": { "base": "game:block/clay/blueclay" } },
+        "machinerymolds-burned-*": { "all": { "base": "game:block/clay/ceramic-dark" } }
+    },
+    "shape": {
+        "base": "block/clay/mold/{tooltype}"
+    },
+    "sounds": {
+        "walk": "walk/stone"
+    },
+    "collisionboxByType": {
+        "*-flywheelsection": {
+            "x1": 0.0625,
+            "y1": 0,
+            "z1": 0.0625,
+            "x2": 0.9375,
+            "y2": 0.25,
+            "z2": 0.9375
+        },
+        "*-gear1": {
+            "x1": 0.28125,
+            "y1": 0,
+            "z1": 0.28125,
+            "x2": 0.71875,
+            "y2": 0.1875,
+            "z2": 0.71875
+        }
+    },
+    "selectionboxByType": {
+        "*-flywheelsection": {
+            "x1": 0.0625,
+            "y1": 0,
+            "z1": 0.0625,
+            "x2": 0.9375,
+            "y2": 0.25,
+            "z2": 0.9375
+        },
+        "*-gear1": {
+            "x1": 0.28125,
+            "y1": 0,
+            "z1": 0.28125,
+            "x2": 0.71875,
+            "y2": 0.1875,
+            "z2": 0.71875
+        }
+    },
+    "sideopaque": {
+        "all": false
+    },
+    "sidesolid": {
+        "all": false
+    },
+    "guiTransformByType": {
+        "*": {
+            "translation": {
+                "x": 0,
+                "y": 3,
+                "z": 0
+            },
+            "origin": {
+                "x": 0.5,
+                "y": 0.0625,
+                "z": 0.5
+            },
+            "scale": 1.33
+        }
+    },
+    "groundTransform": {
+        "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "rotation": {
+            "x": 0,
+            "y": -45,
+            "z": 0
+        },
+        "origin": {
+            "x": 0.5,
+            "y": 0,
+            "z": 0.5
+        },
+        "scale": 2.2
+    }
+}

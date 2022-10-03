@@ -1,0 +1,76 @@
+{
+    "code": "irrigationpipe",
+    "entityClass": "BEIrrigationPipe",
+    "behaviors": [ { "name": "HorizontalOrientable" } ],
+    "creativeinventory": {
+        "general": [ "*-north" ],
+        "harpmechanics": [ "*-north" ]
+    },
+    "attributes": {
+		"handbook": {
+			"groupBy": ["irrigationpipe-*"]
+		}
+	},
+    "variantgroups": [
+        {
+            "code": "side",
+            "loadFromProperties": "abstract/horizontalorientation"
+        }
+    ],
+    "blockmaterial": "Metal",
+    "resistance": 4,
+    "shapebytype": {
+        "*-north": {
+            "base": "piping/fluid/pipe_i",
+            "rotateY": 90
+        },
+        "*-south": {
+            "base": "piping/fluid/pipe_i",
+            "rotateY": 90
+        },
+        "*-east": {
+            "base": "piping/fluid/pipe_i"
+        },
+        "*-west": {
+            "base": "piping/fluid/pipe_i"
+        }
+    },
+    "lightAbsorptionbytype": {
+        "*": 0
+    },
+    "sidesolidbytype": {
+        "*": { "all": "false" }
+    },
+    "sideopaquebytype": {
+        "*": { "all": "false" }
+    },
+    "textures": {
+        "all": { "base": "game:block/metal/sheet/copper1" }
+    },
+    "drops": [
+        {
+            "type": "block",
+            "code": "irrigationpipe-north"
+        }
+    ],
+    "sounds": {
+        "place": "game:block/anvil",
+        "break": "game:block/anvil",
+        "walk": "game:walk/metal"
+    },
+    "collisionSelectionBoxesByType": {
+        "*": [
+            {
+                "x1": 0.375,
+                "y1": 0.375,
+                "z1": 0.375,
+                "x2": 0.625,
+                "y2": 0.625,
+                "z2": 0.625
+            }
+        ]
+    },
+    "guiTransform": {
+        "scale": 1.5
+    }
+}

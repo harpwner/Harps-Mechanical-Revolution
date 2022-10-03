@@ -1,6 +1,6 @@
 ﻿{
     "code": "fakeleverblock",
-    "class": "game:Block",
+    "class": "Block",
     "entityClass": "BEFakeBlock",
     "shape": { "base": "game:block/basic/nothing" },
     "blockmaterial": "Metal",

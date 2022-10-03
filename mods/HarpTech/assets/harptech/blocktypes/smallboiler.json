@@ -1,6 +1,6 @@
 ﻿{
     "code": "boilersmall",
-    "class": "BlockBoiler",
+    "class": "HarpBlockBoiler",
     "entityClass": "BESmallBoiler",
     "shape": { "base": "block/smallboiler" },
     "blockmaterial": "Metal",

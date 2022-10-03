@@ -1,0 +1,86 @@
+{
+	"editor": {
+		"allAngles": false,
+		"entityTextureMode": false
+	},
+	"textureWidth": 16,
+	"textureHeight": 16,
+	"textureSizes": {
+	},
+	"textures": {
+		"copper1": "/Users/HARPWNER/AppData/Roaming/Vintagestory/assets/survival/textures/block/metal/sheet/copper1"
+	},
+	"elements": [
+		{
+			"name": "pipe",
+			"from": [ 8.0, 8.0, 8.0 ], 
+			"to": [ 8.0, 8.0, 8.0 ], 
+			"rotationOrigin": [ 8.0, 8.0, 8.0 ],
+			"faces": {
+				"north": { "texture": "#copper1", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+				"east": { "texture": "#copper1", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+				"south": { "texture": "#copper1", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+				"west": { "texture": "#copper1", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+				"up": { "texture": "#copper1", "uv": [ 0.0, 0.0, 0.5, 0.5 ] },
+				"down": { "texture": "#copper1", "uv": [ 0.0, 0.0, 0.5, 0.5 ] }
+			},
+			"children": [
+				{
+					"name": "pipe1",
+					"from": [ 2.0, -2.0, 1.0 ], 
+					"to": [ 8.0, 2.0, 2.0 ], 
+					"rotationOrigin": [ 2.0, -2.0, 1.0 ],
+					"faces": {
+						"north": { "texture": "#copper1", "uv": [ 0.0, 0.0, 6.0, 4.0 ] },
+						"east": { "texture": "#copper1", "uv": [ 0.0, 0.0, 1.0, 4.0 ] },
+						"south": { "texture": "#copper1", "uv": [ 0.0, 0.0, 6.0, 4.0 ] },
+						"west": { "texture": "#copper1", "uv": [ 0.0, 0.0, 1.0, 4.0 ] },
+						"up": { "texture": "#copper1", "uv": [ 0.0, 0.0, 6.0, 1.0 ] },
+						"down": { "texture": "#copper1", "uv": [ 0.0, 0.0, 6.0, 1.0 ] }
+					}
+				},
+				{
+					"name": "pipe23",
+					"from": [ 2.0, -2.0, -2.0 ], 
+					"to": [ 8.0, 2.0, -1.0 ], 
+					"rotationOrigin": [ 2.0, -2.0, -2.0 ],
+					"faces": {
+						"north": { "texture": "#copper1", "uv": [ 0.0, 0.0, 6.0, 4.0 ] },
+						"east": { "texture": "#copper1", "uv": [ 0.0, 0.0, 1.0, 4.0 ] },
+						"south": { "texture": "#copper1", "uv": [ 0.0, 0.0, 6.0, 4.0 ] },
+						"west": { "texture": "#copper1", "uv": [ 0.0, 0.0, 1.0, 4.0 ] },
+						"up": { "texture": "#copper1", "uv": [ 0.0, 0.0, 6.0, 1.0 ] },
+						"down": { "texture": "#copper1", "uv": [ 0.0, 0.0, 6.0, 1.0 ] }
+					}
+				},
+				{
+					"name": "pipe24",
+					"from": [ 2.0, -2.0, -1.0 ], 
+					"to": [ 8.0, -1.0, 1.0 ], 
+					"rotationOrigin": [ 2.0, -2.0, -1.0 ],
+					"faces": {
+						"north": { "texture": "#copper1", "uv": [ 0.0, 0.0, 6.0, 1.0 ] },
+						"east": { "texture": "#copper1", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+						"south": { "texture": "#copper1", "uv": [ 0.0, 0.0, 6.0, 1.0 ] },
+						"west": { "texture": "#copper1", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+						"up": { "texture": "#copper1", "uv": [ 0.0, 0.0, 6.0, 2.0 ] },
+						"down": { "texture": "#copper1", "uv": [ 0.0, 0.0, 6.0, 2.0 ] }
+					}
+				},
+				{
+					"name": "pipe25",
+					"from": [ 2.0, 1.0, -1.0 ], 
+					"to": [ 8.0, 2.0, 1.0 ], 
+					"rotationOrigin": [ 2.0, 1.0, -1.0 ],
+					"faces": {
+						"north": { "texture": "#copper1", "uv": [ 0.0, 0.0, 6.0, 1.0 ] },
+						"east": { "texture": "#copper1", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+						"south": { "texture": "#copper1", "uv": [ 0.0, 0.0, 6.0, 1.0 ] },
+						"west": { "texture": "#copper1", "uv": [ 0.0, 0.0, 2.0, 1.0 ] },
+						"up": { "texture": "#copper1", "uv": [ 0.0, 0.0, 6.0, 2.0 ] },
+						"down": { "texture": "#copper1", "uv": [ 0.0, 0.0, 6.0, 2.0 ] }
+					}
+				}
+			]
+		}
+	]}
