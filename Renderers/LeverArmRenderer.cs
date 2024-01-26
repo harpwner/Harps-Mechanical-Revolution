@@ -50,7 +50,7 @@ namespace HarpTech.Renderers
             rpi.GlToggleBlend(true);
 
             IStandardShaderProgram prog = rpi.PreparedStandardShader(pos.X, pos.Y, pos.Z);
-            prog.Tex2D = api.BlockTextureAtlas.AtlasTextureIds[0];
+            prog.Tex2D = api.BlockTextureAtlas.AtlasTextures[0].TextureId;
 
             float armAngle = (float)Math.Asin((5.515f / 32f) * Math.Sin(leverArm.AngleRad));
 
